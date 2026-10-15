@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e2a8e9517dfb43107f44ba723780bc1d" extends="task" label="New Discharge Task" max_length="40" name="x_snc_discharge_0_new_discharge_task" type="collection">
+        <element label="Blocker Notes" max_length="40" name="blocker_notes" type="string"/>
+        <element choice="1" label="Status" mandatory="true" max_length="255" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="Completed"/>
+                <element inactive_on_update="false" label="Blocked" sequence="1" value="Blocked"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
+                <element inactive_on_update="false" label="In Progress" sequence="3" value="In Progress"/>
+            </choice>
+        </element>
+        <element label="Discharge Case" max_length="32" name="discharge_case" reference="x_snc_discharge_0_discharge_case" type="reference"/>
+        <element choice="1" label="Task Type" mandatory="true" max_length="255" name="task_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Transportation" sequence="4" value="Transportation"/>
+                <element inactive_on_update="false" label="Billing" sequence="1" value="Billing"/>
+                <element inactive_on_update="false" label="Follow-up" sequence="5" value="Follow-up"/>
+                <element inactive_on_update="false" label="Documentation" sequence="0" value="Documentation"/>
+                <element inactive_on_update="false" label="TPA-Insurance" sequence="2" value="TPA Insurance"/>
+                <element inactive_on_update="false" label="Pharmacy" sequence="3" value="Pharmacy"/>
+            </choice>
+        </element>
+        <element choice="1" label="Priority" mandatory="true" max_length="255" name="priorit0" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="3" value="Low"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="High"/>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="Medium"/>
+                <element inactive_on_update="false" label="Critical" sequence="0" value="Critical"/>
+            </choice>
+        </element>
+        <element label="Assigned Group" max_length="32" name="assigned_group" reference="sys_user_group" type="reference"/>
+    </element>
+</database>

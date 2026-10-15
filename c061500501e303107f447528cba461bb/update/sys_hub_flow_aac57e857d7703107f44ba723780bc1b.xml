@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=484000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>bed_release</internal_name>
+        <label_cache>[{"name":"Updated_1.current.bed_ward_number","label":"Trigger - Record Updated➛Patient Details Record➛Bed/Ward Number","reference":"x_snc_discharge_0_bed_details","reference_display":"Bed Details","type":"reference","base_type":"reference","parent_table_name":"x_snc_discharge_0_patient_details","column_name":"bed_ward_number","usedInstances":{"b8d0a193-c50c-4ee1-879d-e070f44ef5e1":["record"]}}]</label_cache>
+        <master_snapshot>64a77a897d7703107f44ba723780bc0a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Bed Release</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>30a77a897d7703107f44ba723780bc3c</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:55:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aac57e857d7703107f44ba723780bc1b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Bed Release</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_hub_flow_aac57e857d7703107f44ba723780bc1b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:04:00</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>4da77a897d7703107f44ba723780bc56</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_discharge_0_patient_details">patient_status=Discharged<item display_value="Discharged" endquery="false" field="patient_status" goto="false" newquery="false" operator="=" or="false" value="Discharged"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:04:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>30a77a897d7703107f44ba723780bc3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:04:00</sys_updated_on>
+        <table>x_snc_discharge_0_patient_details</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>aac57e857d7703107f44ba723780bc1b</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:04:00</sys_created_on>
+        <sys_id>3ca77a897d7703107f44ba723780bc3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:04:00</sys_updated_on>
+        <trigger display_value="">30a77a897d7703107f44ba723780bc3c</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=aac57e857d7703107f44ba723780bc1b^sys_idNOT IN3ca77a897d7703107f44ba723780bc3c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=aac57e857d7703107f44ba723780bc1b^sys_idNOT INa6c57e857d7703107f44ba723780bc1c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>aac57e857d7703107f44ba723780bc1b</id>
+        <name>Bed Release</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:55:55</sys_created_on>
+        <sys_id>a6c57e857d7703107f44ba723780bc1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 14:55:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a6c57e857d7703107f44ba723780bc1c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=aac57e857d7703107f44ba723780bc1b^sys_idNOT IN10d5fe857d7703107f44ba723780bc14,88d5be857d7703107f44ba723780bcd3,c4d5be857d7703107f44ba723780bcf1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Bed Release">aac57e857d7703107f44ba723780bc1b</model>
+        <model_id>aac57e857d7703107f44ba723780bc1b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_aac57e857d7703107f44ba723780bc1b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:56:02</sys_created_on>
+        <sys_id>10d5fe857d7703107f44ba723780bc14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 14:56:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=10d5fe857d7703107f44ba723780bc14"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Bed Release">aac57e857d7703107f44ba723780bc1b</model>
+        <model_id>aac57e857d7703107f44ba723780bc1b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_aac57e857d7703107f44ba723780bc1b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:56:02</sys_created_on>
+        <sys_id>88d5be857d7703107f44ba723780bcd3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=88d5be857d7703107f44ba723780bcd3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Bed Release">aac57e857d7703107f44ba723780bc1b</model>
+        <model_id>aac57e857d7703107f44ba723780bc1b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_aac57e857d7703107f44ba723780bc1b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:56:02</sys_created_on>
+        <sys_id>c4d5be857d7703107f44ba723780bcf1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c4d5be857d7703107f44ba723780bcf1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=aac57e857d7703107f44ba723780bc1b^sys_idNOT IN7bc5be857d7703107f44ba723780bc1f"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Bed Release">aac57e857d7703107f44ba723780bc1b</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:56:01</sys_created_on>
+        <sys_id>7bc5be857d7703107f44ba723780bc1f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:58</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=aac57e857d7703107f44ba723780bc1b^sys_idNOT INb066b2097d7703107f44ba723780bcc9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Bed Release">aac57e857d7703107f44ba723780bc1b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:58:32</sys_created_on>
+        <sys_id>b066b2097d7703107f44ba723780bcc9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:05:46</sys_updated_on>
+        <ui_id>b8d0a193-c50c-4ee1-879d-e070f44ef5e1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfqyxpAUHfGBXSJAYSbOyBMevGvm0tOU7mj0JX9b/vOnFKBYiBxAtaX6r7ZZ9zck9ys2ZKsgnbQ5kXR8WBGBfj8SjPR4d7RXkwLouRHANiwYbMQIXUaVHUVlK8BB1iYr3+3kjwKHmRiWAtGp+VFN2BldyEqkS72VC/VK7RsLpOY5QRC6Ul9bPJze2QNWDpBo+WTdaPSq+FqKFETa2XPcbHmP2qibGsRagIJ1d98ixNTlNl8GVKFRqKcIp8yPDeo5FIQGagHQ5ZBYZY13bFJt4GSlgEeWH0atuxUMZ3RCu4d+oP3byXx74ZEjORRNiGPAnUpWdT8HBFJwsf7FavWgl0nSYSZxC0P9nNdQ0XjVe16UY8lLqfrnWozHmnCNsesPM8giMQ2ESeEXlHa3a1qO8ue5CnyrSSJIq6FqC3EXhvVRl8hLNmqLHVuIKmUWbOG1svVTtMUKpsrinIZrq+ozudmpsMRMSdkaqQnVJ+2qavwapI4isdQ8ObIXMrd6LBuQcqpCH/HSKSjliiwFsVWgl4uwlxWFjV+GO6aokJ+GaYTFDuv7Rh4uhhoXbOfDDCPXdGxKcoFmDnyHMebSDRg9LuqQE+o/z0gzwyOG898mY/vAJt74dv7RY8jz5Z4knubHd2cN4VkiH2380Qhx/JEInGh3fEv3yQj1580+5sUrv6bscDzoMP7mfI87E8XtLiR6C/0meBN+AV/Xflp4542/Db3PIKTr1bThVq6Z4h2VsFK0LtkXekH9klFQfXqbj9hrybZ4qDvP19IOf8N5+S279nV38ZUQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b066b2097d7703107f44ba723780bcc9"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=aac57e857d7703107f44ba723780bc1b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_aac57e857d7703107f44ba723780bc1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:56:02</sys_created_on>
+        <sys_id>44d5be857d7703107f44ba723780bced</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 14:56:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_aac57e857d7703107f44ba723780bc1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:56:02</sys_created_on>
+        <sys_id>9cd5fe857d7703107f44ba723780bc0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 14:56:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_aac57e857d7703107f44ba723780bc1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 14:56:03</sys_created_on>
+        <sys_id>dcd5fe857d7703107f44ba723780bc19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 14:56:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_aac57e857d7703107f44ba723780bc1b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_aac57e857d7703107f44ba723780bc1b"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>bed_release</internal_name>
+        <label_cache>[{"name":"Updated_1.current.bed_ward_number","label":"Trigger - Record Updated➛Patient Details Record➛Bed/Ward Number","reference":"x_snc_discharge_0_bed_details","reference_display":"Bed Details","type":"reference","base_type":"reference","parent_table_name":"x_snc_discharge_0_patient_details","column_name":"bed_ward_number","usedInstances":{"b8d0a193-c50c-4ee1-879d-e070f44ef5e1":["record"]}}]</label_cache>
+        <master>true</master>
+        <name>Bed Release</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Bed Release">aac57e857d7703107f44ba723780bc1b</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>64a77a897d7703107f44ba723780bc0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=64a77a897d7703107f44ba723780bc0a^sys_idNOT INe0a77a897d7703107f44ba723780bc0b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>64a77a897d7703107f44ba723780bc0a</id>
+        <name>Bed Release</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>e0a77a897d7703107f44ba723780bc0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e0a77a897d7703107f44ba723780bc0b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=64a77a897d7703107f44ba723780bc0a^sys_idNOT INa0a77a897d7703107f44ba723780bc0c,b4a77a897d7703107f44ba723780bc1b,f4a77a897d7703107f44ba723780bc25"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Bed Release">64a77a897d7703107f44ba723780bc0a</model>
+        <model_id>64a77a897d7703107f44ba723780bc0a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_64a77a897d7703107f44ba723780bc0a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>a0a77a897d7703107f44ba723780bc0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a0a77a897d7703107f44ba723780bc0c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Bed Release">64a77a897d7703107f44ba723780bc0a</model>
+        <model_id>64a77a897d7703107f44ba723780bc0a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_64a77a897d7703107f44ba723780bc0a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>b4a77a897d7703107f44ba723780bc1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b4a77a897d7703107f44ba723780bc1b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Bed Release">64a77a897d7703107f44ba723780bc0a</model>
+        <model_id>64a77a897d7703107f44ba723780bc0a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_64a77a897d7703107f44ba723780bc0a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>f4a77a897d7703107f44ba723780bc25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f4a77a897d7703107f44ba723780bc25"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=64a77a897d7703107f44ba723780bc0a^sys_idNOT IN70a77a897d7703107f44ba723780bc36"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Bed Release">64a77a897d7703107f44ba723780bc0a</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>70a77a897d7703107f44ba723780bc36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=64a77a897d7703107f44ba723780bc0a^sys_idNOT INbca77a897d7703107f44ba723780bc34"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Bed Release">64a77a897d7703107f44ba723780bc0a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>bca77a897d7703107f44ba723780bc34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <ui_id>b8d0a193-c50c-4ee1-879d-e070f44ef5e1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfqyxpAUHfGBXSJAYSbOyBMevGvm0tOU7mj0JX9b/vOnFKBYiBxAtaX6r7ZZ9zck9ys2ZKsgnbQ5kXR8WBGBfj8SjPR4d7RXkwLouRHANiwYbMQIXUaVHUVlK8BB1iYr3+3kjwKHmRiWAtGp+VFN2BldyEqkS72VC/VK7RsLpOY5QRC6Ul9bPJze2QNWDpBo+WTdaPSq+FqKFETa2XPcbHmP2qibGsRagIJ1d98ixNTlNl8GVKFRqKcIp8yPDeo5FIQGagHQ5ZBYZY13bFJt4GSlgEeWH0atuxUMZ3RCu4d+oP3byXx74ZEjORRNiGPAnUpWdT8HBFJwsf7FavWgl0nSYSZxC0P9nNdQ0XjVe16UY8lLqfrnWozHmnCNsesPM8giMQ2ESeEXlHa3a1qO8ue5CnyrSSJIq6FqC3EXhvVRl8hLNmqLHVuIKmUWbOG1svVTtMUKpsrinIZrq+ozudmpsMRMSdkaqQnVJ+2qavwapI4isdQ8ObIXMrd6LBuQcqpCH/HSKSjliiwFsVWgl4uwlxWFjV+GO6aokJ+GaYTFDuv7Rh4uhhoXbOfDDCPXdGxKcoFmDnyHMebSDRg9LuqQE+o/z0gzwyOG898mY/vAJt74dv7RY8jz5Z4knubHd2cN4VkiH2380Qhx/JEInGh3fEv3yQj1580+5sUrv6bscDzoMP7mfI87E8XtLiR6C/0meBN+AV/Xflp4542/Db3PIKTr1bThVq6Z4h2VsFK0LtkXekH9klFQfXqbj9hrybZ4qDvP19IOf8N5+S279nV38ZUQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bca77a897d7703107f44ba723780bc34"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=64a77a897d7703107f44ba723780bc0a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_64a77a897d7703107f44ba723780bc0a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>24a77a897d7703107f44ba723780bc17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_64a77a897d7703107f44ba723780bc0a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>74a77a897d7703107f44ba723780bc21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_64a77a897d7703107f44ba723780bc0a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:03:59</sys_created_on>
+        <sys_id>b0a77a897d7703107f44ba723780bc2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:03:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_64a77a897d7703107f44ba723780bc0a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_64a77a897d7703107f44ba723780bc0a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>aac57e857d7703107f44ba723780bc1b</sys_id>
+        <latest_snapshot>64a77a897d7703107f44ba723780bc0a</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-hotfix1-06-18-2026_06-19-2026_0938.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=aac57e857d7703107f44ba723780bc1b^sys_idNOT IN34a77a897d7703107f44ba723780bc3d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"34a77a897d7703107f44ba723780bc3d","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>aac57e857d7703107f44ba723780bc1b</plan_id>
+        <snapshot>7608b6c97d7703107f44ba723780bccf</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:04:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>34a77a897d7703107f44ba723780bc3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:04:00</sys_updated_on>
+        <trigger display_value="">30a77a897d7703107f44ba723780bc3c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=aac57e857d7703107f44ba723780bc1b"/>
+</record_update>

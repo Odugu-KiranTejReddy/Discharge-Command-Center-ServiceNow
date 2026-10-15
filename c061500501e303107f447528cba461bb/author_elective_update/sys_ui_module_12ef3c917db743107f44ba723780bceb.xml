@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="SLA Test Task">5aef3c917db743107f44ba723780bce6</application>
+        <filter/>
+        <name>SLA Test Tasks</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_discharge_0.sla_test_task_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 00:59:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12ef3c917db743107f44ba723780bceb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SLA Test Tasks</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_ui_module_12ef3c917db743107f44ba723780bceb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 00:59:23</sys_updated_on>
+        <table>x_snc_discharge_0_sla_test_task</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>sys_ui_module_12ef3c917db743107f44ba723780bceb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="SLA Test Task">5aef3c917db743107f44ba723780bce6</application><filter/><name>SLA Test Tasks</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_snc_discharge_0.sla_test_task_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-07 00:59:23</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>12ef3c917db743107f44ba723780bceb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SLA Test Tasks</sys_name><sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package><sys_policy/><sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope><sys_update_name>sys_ui_module_12ef3c917db743107f44ba723780bceb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-07 00:59:23</sys_updated_on><table>x_snc_discharge_0_sla_test_task</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>1944027820</payload_hash>
+        <record_name>SLA Test Tasks</record_name>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 00:59:23</sys_created_on>
+        <sys_id>22ef3c917db743107f44ba723780bcef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a113df4d2b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 00:59:23</sys_updated_on>
+        <type>Module</type>
+        <update_guid>92ef3c916fb7431012ee718fb934dbee</update_guid>
+        <update_guid_history>92ef3c916fb7431012ee718fb934dbee:1944027820</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 03:49:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>0028080a9180483b8021399393693fd9</sys_id>
+        <sys_metadata>12ef3c917db743107f44ba723780bceb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SLA Test Tasks</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>sys_ui_module_12ef3c917db743107f44ba723780bceb</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_12ef3c917db743107f44ba723780bceb">22ef3c917db743107f44ba723780bcef</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 03:49:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

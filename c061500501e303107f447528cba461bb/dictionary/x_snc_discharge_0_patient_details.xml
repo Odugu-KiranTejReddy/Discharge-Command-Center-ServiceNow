@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="bf02984501e303107f447528cba46185" label="Patient Details" max_length="40" name="x_snc_discharge_0_patient_details" type="collection">
+        <element choice="1" label="Patient Status" mandatory="true" max_length="255" name="patient_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Discharged" sequence="2" value="Discharged"/>
+                <element inactive_on_update="false" label="Admitted" sequence="0" value="Admitted"/>
+                <element inactive_on_update="false" label="Discharge in Progress" sequence="1" value="Discharge in Progress"/>
+            </choice>
+        </element>
+        <element display="true" label="Patient Name" mandatory="true" max_length="40" name="patient_name" type="string"/>
+        <element label="Allocated Doctor" max_length="1024" name="attending_physician" reference="sys_user" type="reference"/>
+        <element label="Medically Ready Date &amp; Time" max_length="255" name="medically_ready_date_time" type="glide_date_time"/>
+        <element label="Discharge Readiness Score" max_length="255" name="discharge_readiness_score" type="integer"/>
+        <element label="Bed/Ward Number" max_length="40" name="bed_ward_number" reference="x_snc_discharge_0_bed_details" type="reference"/>
+        <element label="Medically Ready" mandatory="true" max_length="255" name="medically_ready" type="boolean"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Status" max_length="255" name="status" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>

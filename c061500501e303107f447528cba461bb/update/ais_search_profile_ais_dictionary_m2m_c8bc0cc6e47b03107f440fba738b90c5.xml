@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_snc_discharge_0_now_assist_in_virtual_agent_16aacc486e47b03107f440fba738b90e7_default_spell_check_dictionary">c8bc0cc6e47b03107f440fba738b90b5</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="Now Assist in Virtual Agent - 1">d3ac0cc6e47b03107f440fba738b9001</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 05:11:02</sys_created_on>
+        <sys_id>c8bc0cc6e47b03107f440fba738b90c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_discharge_0_now_assist_in_virtual_agent_16aacc486e47b03107f440fba738b90e7_default_spell_check_dictionary.Now Assist in Virtual Agent - 16aacc486e47b03107f440fba738b90e7</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_c8bc0cc6e47b03107f440fba738b90c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 05:11:02</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

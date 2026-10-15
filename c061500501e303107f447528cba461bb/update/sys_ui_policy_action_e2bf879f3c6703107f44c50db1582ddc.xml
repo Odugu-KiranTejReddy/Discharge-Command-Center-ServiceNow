@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>blocker_notes</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-01 06:20:32</sys_created_on>
+        <sys_id>e2bf879f3c6703107f44c50db1582ddc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>blocker_notes</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_ui_policy_action_e2bf879f3c6703107f44c50db1582ddc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-01 06:22:59</sys_updated_on>
+        <table>x_snc_discharge_0_discharge_task</table>
+        <ui_policy display_value="Blocker notes are mandatory">393fc35f3c6703107f44c50db1582d88</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2bf879f3c6703107f44c50db1582ddc"/>
+</record_update>

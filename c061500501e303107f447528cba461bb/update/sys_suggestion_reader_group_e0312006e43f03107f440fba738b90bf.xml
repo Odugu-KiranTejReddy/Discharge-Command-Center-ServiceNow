@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id/>
+        <limit>3</limit>
+        <order>250</order>
+        <section_header>Ask Now Assist</section_header>
+        <suggestion_type>Now Assist Suggested Query Reader Group for Collab Chat Search Configuration</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 06:40:38</sys_created_on>
+        <sys_id>e0312006e43f03107f440fba738b90bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Now Assist Suggested Query Reader Group for Collab Chat Search Configuration</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_e0312006e43f03107f440fba738b90bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 06:40:38</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

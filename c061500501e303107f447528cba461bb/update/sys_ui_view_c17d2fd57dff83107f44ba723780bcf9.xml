@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>discharge</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 13:37:36</sys_created_on>
+        <sys_id>c17d2fd57dff83107f44ba723780bcf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Discharge</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_ui_view_c17d2fd57dff83107f44ba723780bcf9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 13:37:36</sys_updated_on>
+        <title>Discharge</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Home page">015ddb817dbb03107f44ba723780bc51</macroponent>
+        <name>button_2/now_default/isHidden</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[// /**
+* @param {
+    params
+}
+params
+    *
+    @param {
+        api
+    }
+params.api *
+    @param {
+        TransformApiHelpers
+    }
+params.helpers *
+    /
+
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    return '';
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 11:46:18</sys_created_on>
+        <sys_id>891093d17dfb83107f44ba723780bc9b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>button_2/now_default/isHidden</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_ux_client_script_891093d17dfb83107f44ba723780bc9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 12:03:10</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>sys_ux_client_script_891093d17dfb83107f44ba723780bc9b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Home page"&gt;015ddb817dbb03107f44ba723780bc51&lt;/macroponent&gt;&lt;name&gt;button_2/now_default/isHidden&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[// /**
+* @param {
+    params
+}
+params
+    *
+    @param {
+        api
+    }
+params.api *
+    @param {
+        TransformApiHelpers
+    }
+params.helpers *
+    /
+
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    return '';
+
+
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-10-07 11:46:18&lt;/sys_created_on&gt;&lt;sys_id&gt;891093d17dfb83107f44ba723780bc9b&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;button_2/now_default/isHidden&lt;/sys_name&gt;&lt;sys_package display_value="Discharge Command Center" source="x_snc_discharge_0"&gt;c061500501e303107f447528cba461bb&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Discharge Command Center"&gt;c061500501e303107f447528cba461bb&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_891093d17dfb83107f44ba723780bc9b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-10-07 12:03:10&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-237511433</payload_hash>
+        <record_name>button_2/now_default/isHidden</record_name>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 12:03:10</sys_created_on>
+        <sys_id>3dd75f197d3f83107f44ba723780bcf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1163f02c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 12:03:10</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>bdd75f199e3f83109b641b93ad209df2</update_guid>
+        <update_guid_history>bdd75f199e3f83109b641b93ad209df2:-237511433,44879fd5c23f831011e4ebdd14901ac6:-2102621306,f4755f91f53f83107b2c45f173ebdbce:1309707274,eaf313ddf7fb83104382aab992bb3f88:1965636090</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-12 04:22:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>10de156e68d64081afa1510b16cc5799</sys_id>
+        <sys_metadata>891093d17dfb83107f44ba723780bc9b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>button_2/now_default/isHidden</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_891093d17dfb83107f44ba723780bc9b</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_891093d17dfb83107f44ba723780bc9b">3dd75f197d3f83107f44ba723780bcf3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-12 04:22:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

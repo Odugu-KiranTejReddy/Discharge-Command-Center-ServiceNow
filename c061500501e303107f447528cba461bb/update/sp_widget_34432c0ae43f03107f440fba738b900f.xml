@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope) {
+  var c = this;
+  c.open = false;
+  c.submitted = false;
+  c.error = '';
+  c.form = {};
+
+  c.submit = function() {
+    if (!c.form.patient_name) {
+      c.error = 'Please enter your name.';
+      return;
+    }
+    c.error = '';
+    c.server.get({
+      action: 'submit',
+      patient_name: c.form.patient_name,
+      experience_with_doctor: c.form.experience_with_doctor,
+      overall_experience: c.form.overall_experience,
+      rate_the_facilities: c.form.rate_the_facilities,
+      comments: c.form.comments
+    }).then(function(response) {
+      if (response.data.success) {
+        c.submitted = true;
+        c.form = {};
+      } else {
+        c.error = 'Could not save. Please try again.';
+      }
+    });
+  };
+
+  c.close = function() {
+    c.open = false;
+    c.submitted = false;
+    c.error = '';
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.fb-btn {&#13;
+  position: fixed;&#13;
+  right: 0;&#13;
+  top: 50%;&#13;
+  transform: rotate(-90deg) translateX(50%);&#13;
+  transform-origin: right bottom;&#13;
+  background: #1f8476;&#13;
+  color: #fff;&#13;
+  border: none;&#13;
+  padding: 8px 20px;&#13;
+  z-index: 999;&#13;
+  cursor: pointer;&#13;
+}&#13;
+.fb-overlay {&#13;
+  position: fixed;&#13;
+  top: 0; left: 0; right: 0; bottom: 0;&#13;
+  background: rgba(0,0,0,0.5);&#13;
+  z-index: 1000;&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+}&#13;
+.fb-modal {&#13;
+  background: #fff;&#13;
+  padding: 20px;&#13;
+  width: 420px;&#13;
+  max-width: 90%;&#13;
+  max-height: 90vh;&#13;
+  overflow-y: auto;&#13;
+  border-radius: 8px;&#13;
+}&#13;
+.fb-modal label { font-weight: 600; margin-top: 6px; }&#13;
+.fb-modal .form-control { margin-bottom: 8px; }&#13;
+.fb-actions { text-align: right; margin-top: 10px; }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>discharge_feedback_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Discharge Feedback Widget</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  if (input && input.action == 'submit') {
+    var gr = new GlideRecord('x_snc_discharge_0_feedback');
+    gr.initialize();
+    gr.setValue('patient_name', input.patient_name);
+    gr.setValue('experience_with_doctor', input.experience_with_doctor);
+    gr.setValue('overall_experience', input.overall_experience);
+    gr.setValue('rate_the_facilities', input.rate_the_facilities);
+    gr.setValue('comments', input.comments);
+    var sysId = gr.insert();
+    data.success = !!sysId;
+  }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 06:51:33</sys_created_on>
+        <sys_id>34432c0ae43f03107f440fba738b900f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Discharge Feedback Widget</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sp_widget_34432c0ae43f03107f440fba738b900f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 06:51:33</sys_updated_on>
+        <template><![CDATA[<div class="fb-wrapper">
+  <button class="fb-btn" ng-click="c.open = true">Feedback</button>
+
+  <div class="fb-overlay" ng-if="c.open">
+    <div class="fb-modal">
+      <h4>Share your feedback</h4>
+
+      <div ng-if="!c.submitted">
+        <label>Patient Name</label>
+        <input type="text" class="form-control" ng-model="c.form.patient_name" placeholder="Your name"/>
+
+        <label>Experience with Doctor</label>
+        <select class="form-control" ng-model="c.form.experience_with_doctor">
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+
+        <label>Overall Experience</label>
+        <select class="form-control" ng-model="c.form.overall_experience">
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+
+        <label>Rate the Facilities</label>
+        <select class="form-control" ng-model="c.form.rate_the_facilities">
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+
+        <label>Comments</label>
+        <textarea class="form-control" rows="3" ng-model="c.form.comments" placeholder="Your comments"></textarea>
+
+        <p class="text-danger" ng-if="c.error">{{c.error}}</p>
+
+        <div class="fb-actions">
+          <button class="btn btn-default" ng-click="c.close()">Cancel</button>
+          <button class="btn btn-primary" ng-click="c.submit()">Submit</button>
+        </div>
+      </div>
+
+      <div ng-if="c.submitted" class="text-center">
+        <p>Thank you for your feedback!</p>
+        <button class="btn btn-primary" ng-click="c.close()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

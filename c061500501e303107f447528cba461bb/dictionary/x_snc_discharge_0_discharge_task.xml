@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="ff63a2c1716303107f447c1aba1fc189" label="Discharge Task" max_length="40" name="x_snc_discharge_0_discharge_task" type="collection">
+        <element choice="1" label="Task Type" mandatory="true" max_length="255" name="task_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pharmacy" sequence="3" value="Pharmacy"/>
+                <element inactive_on_update="false" label="Transportation" sequence="4" value="Transportation"/>
+                <element inactive_on_update="false" label="Documentation" sequence="0" value="Documentation"/>
+                <element inactive_on_update="false" label="Follow-up" sequence="5" value="Follow-up"/>
+                <element inactive_on_update="false" label="Billing" sequence="1" value="Billing"/>
+                <element inactive_on_update="false" label="TPA-Insurance" sequence="2" value="TPA Insurance"/>
+            </choice>
+        </element>
+        <element choice="1" label="Status" mandatory="true" max_length="255" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="Completed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="In Progress"/>
+                <element inactive_on_update="false" label="Blocked" sequence="2" value="Blocked"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
+            </choice>
+        </element>
+        <element label="Reassignment Count" max_length="255" name="reassignment_count" type="integer"/>
+        <element label="Blocker Notes" mandatory="true" max_length="40" name="blocker_notes" type="string"/>
+        <element choice="1" label="Priority" mandatory="true" max_length="255" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="0" value="Critical"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="High"/>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="Medium"/>
+                <element inactive_on_update="false" label="Low" sequence="3" value="Low"/>
+            </choice>
+        </element>
+        <element label="Assigned To" max_length="1024" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Assigned Group" max_length="1024" name="assigned_group" reference="sys_user_group" type="reference"/>
+        <element display="true" label="Discharge Case" mandatory="true" max_length="1024" name="discharge_case" reference="x_snc_discharge_0_discharge_case" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <aria_label/>
+        <class_name/>
+        <order>3</order>
+        <semantic_tag/>
+        <size>4</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">ffd46152a03f03107f44038e1c62d770</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 06:14:48</sys_created_on>
+        <sys_id>33d46152a03f03107f44038e1c62d793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sp_column_33d46152a03f03107f44038e1c62d793</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 06:14:48</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>sp_column_33d46152a03f03107f44038e1c62d793</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><aria_label/><class_name/><order>3</order><semantic_tag/><size>4</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">ffd46152a03f03107f44038e1c62d770</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-10 06:14:48</sys_created_on><sys_id>33d46152a03f03107f44038e1c62d793</sys_id><sys_mod_count>0</sys_mod_count><sys_name>3</sys_name><sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package><sys_policy/><sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope><sys_update_name>sp_column_33d46152a03f03107f44038e1c62d793</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-10 06:14:48</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-612263265</payload_hash>
+        <record_name>3</record_name>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 06:14:48</sys_created_on>
+        <sys_id>f3d46152a03f03107f44038e1c62d795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1247325e60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 06:14:48</sys_updated_on>
+        <type>Column</type>
+        <update_guid>b7d46152e53f031087e9065c5d8f4694</update_guid>
+        <update_guid_history>b7d46152e53f031087e9065c5d8f4694:-612263265</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="3">71056552a03f03107f44038e1c62d754</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 06:15:29</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>1a0cbcaa0ce149a7aed87c421cca31f1</sys_id>
+        <sys_metadata>33d46152a03f03107f44038e1c62d793</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>sp_column_33d46152a03f03107f44038e1c62d793</sys_update_name>
+        <sys_update_version display_value="sp_column_33d46152a03f03107f44038e1c62d793">f3d46152a03f03107f44038e1c62d795</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 06:15:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

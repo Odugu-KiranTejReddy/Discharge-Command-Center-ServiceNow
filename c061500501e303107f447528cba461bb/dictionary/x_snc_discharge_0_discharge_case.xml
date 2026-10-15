@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7fa75041012703107f447528cba4615e" label="Discharge Case" max_length="40" name="x_snc_discharge_0_discharge_case" type="collection">
+        <element display="true" label="Patient" mandatory="true" max_length="1024" name="patient" reference="x_snc_discharge_0_patient_details" type="reference"/>
+        <element label="Overall Readiness %" max_length="255" name="overall_readiness" type="integer"/>
+        <element choice="1" label="Readiness Tier" max_length="255" name="readiness_tier" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Partially Ready(50-79)" sequence="1" value="Partially Ready(50-79)"/>
+                <element inactive_on_update="false" label="Ready(&gt;=80)" sequence="0" value="Ready(&gt;=80)"/>
+                <element inactive_on_update="false" label="Not Ready(&lt;50)" sequence="2" value="Not Ready(&lt;50)"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Status" mandatory="true" max_length="255" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Ready for Discharge" sequence="3" value="Ready for Discharge"/>
+                <element inactive_on_update="false" label="At Risk" sequence="1" value="At Risk"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="Closed"/>
+                <element inactive_on_update="false" label="Blocked" sequence="2" value="Blocked"/>
+            </choice>
+        </element>
+        <element label="Has Active Blocker" max_length="255" name="has_active_blocker" type="boolean"/>
+        <element label="Expected Discharge Date &amp; Time" mandatory="true" max_length="255" name="expected_discharge_date_time" type="glide_date_time"/>
+    </element>
+</database>

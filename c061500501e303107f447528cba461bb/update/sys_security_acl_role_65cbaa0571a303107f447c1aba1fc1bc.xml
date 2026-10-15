@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 03:56:28</sys_created_on>
+        <sys_id>65cbaa0571a303107f447c1aba1fc1bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_discharge_0_bed_details.x_snc_discharge_0.bed_details_user</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_security_acl display_value="x_snc_discharge_0_bed_details">a9cbaa0571a303107f447c1aba1fc1b3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_65cbaa0571a303107f447c1aba1fc1bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 03:56:28</sys_updated_on>
+        <sys_user_role display_value="x_snc_discharge_0.bed_details_user" name="x_snc_discharge_0.bed_details_user">11cbe60571a303107f447c1aba1fc19c</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="90b75bb5e4b303107f440fba738b900c" extends="task" label="Transport Request" max_length="40" name="x_snc_discharge_0_transport_request" type="collection"/>
+</database>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_search_facet_item_m2m_element">
+    <sys_uib_search_facet_item_m2m_element action="INSERT_OR_UPDATE">
+        <element_table>sys_ux_app_route</element_table>
+        <search_facet_item display_value="Dashboard">cae7dabeff36e2108437ffffffffffd3</search_facet_item>
+        <sys_class_name>sys_uib_search_facet_item_m2m_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 16:53:03</sys_created_on>
+        <sys_id>6c07c27025f303107f4417dd86dc533e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_uib_search_facet_item_m2m_element_6c07c27025f303107f4417dd86dc533e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 16:53:03</sys_updated_on>
+        <target_id>e407c27025f303107f4417dd86dc533a</target_id>
+    </sys_uib_search_facet_item_m2m_element>
+</record_update>

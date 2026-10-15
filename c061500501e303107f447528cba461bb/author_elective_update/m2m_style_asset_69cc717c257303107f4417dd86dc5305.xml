@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_style_asset">
+    <m2m_style_asset action="DELETE">
+        <asset display_value="Open Sans">c69aa99853546010b846ddeeff7b1256</asset>
+        <properties>{
+  "font-style": "normal",
+  "font-weight": "700"
+}</properties>
+        <style display_value="Typography">59cc317c257303107f4417dd86dc538f</style>
+        <sys_class_name>m2m_style_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 16:08:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>69cc717c257303107f4417dd86dc5305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>m2m_style_asset_69cc717c257303107f4417dd86dc5305</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 16:08:20</sys_updated_on>
+    </m2m_style_asset>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>m2m_style_asset_69cc717c257303107f4417dd86dc5305</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_style_asset"><m2m_style_asset action="INSERT_OR_UPDATE"><asset display_value="Open Sans">c69aa99853546010b846ddeeff7b1256</asset><properties>{
+  "font-style": "normal",
+  "font-weight": "700"
+}</properties><style display_value="Typography">59cc317c257303107f4417dd86dc538f</style><sys_class_name>m2m_style_asset</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-05 16:08:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>69cc717c257303107f4417dd86dc5305</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package><sys_policy/><sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope><sys_update_name>m2m_style_asset_69cc717c257303107f4417dd86dc5305</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-05 16:08:20</sys_updated_on></m2m_style_asset></record_update>]]></payload>
+        <payload_hash>-525893057</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 16:08:20</sys_created_on>
+        <sys_id>edcc717c257303107f4417dd86dc5307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a10cd2c0f00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 16:08:20</sys_updated_on>
+        <type>UX Style Assets</type>
+        <update_guid>e1cc717cca73031050de1469c8b19907</update_guid>
+        <update_guid_history>e1cc717cca73031050de1469c8b19907:-525893057</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">022617057d7b03107f44ba723780bc07</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:17:20</sys_created_on>
+        <sys_db_object display_value="" name="m2m_style_asset">m2m_style_asset</sys_db_object>
+        <sys_id>0e69c543d5874e89a5078a113fa08ff9</sys_id>
+        <sys_metadata>69cc717c257303107f4417dd86dc5305</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>m2m_style_asset_69cc717c257303107f4417dd86dc5305</sys_update_name>
+        <sys_update_version display_value="m2m_style_asset_69cc717c257303107f4417dd86dc5305">edcc717c257303107f4417dd86dc5307</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 17:17:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

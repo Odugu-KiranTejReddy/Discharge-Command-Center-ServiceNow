@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="151fff59f5a303107f44e7103d160463" extends="sys_user_group" label="Departments" max_length="40" name="x_snc_discharge_0_departments" type="collection"/>
+</database>

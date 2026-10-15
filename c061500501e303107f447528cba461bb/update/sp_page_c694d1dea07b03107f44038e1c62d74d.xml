@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>/* ===================================================
+   1. GLOBAL PAGE &amp; BODY (Clean Pastel Background)
+   =================================================== */
+body, 
+.sp-page-root {
+    background-color: #f7f9fa !important;
+}
+
+/* ===================================================
+   2. HERO SEARCH BANNER (Pastel Gradient)
+   =================================================== */
+.dcc-hero-banner {
+    background: linear-gradient(135deg, #a8d5e2 0%, #c1e1dc 100%) !important;
+    padding: 70px 0 60px 0 !important;
+    text-align: center !important;
+    color: #2c3e50 !important;
+}
+
+/* Headline typography */
+.dcc-hero-banner h1, 
+.dcc-hero-banner h2 {
+    color: #2c3e50 !important;
+    font-weight: 600 !important;
+    font-size: 38px !important;
+    margin-bottom: 8px !important;
+}
+
+/* Sub-text typography */
+.dcc-hero-banner p, 
+.dcc-hero-banner span {
+    color: #3b575d !important;
+    font-size: 18px !important;
+    margin-bottom: 24px !important;
+}
+
+/* Center search container */
+.dcc-hero-banner .input-group {
+    max-width: 620px !important;
+    margin: 20px auto 0 auto !important;
+}
+
+/* Rounded search input */
+.dcc-hero-banner .input-group .form-control {
+    border-radius: 28px 0 0 28px !important;
+    border: 1px solid #d0e1e6 !important;
+    background-color: #ffffff !important;
+    height: 48px !important;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.05) !important;
+    padding-left: 20px !important;
+    font-size: 15px !important;
+}
+
+/* Search button */
+.dcc-hero-banner .input-group .btn {
+    border-radius: 0 28px 28px 0 !important;
+    background-color: #79a8a9 !important;
+    border: 1px solid #79a8a9 !important;
+    color: #ffffff !important;
+    height: 48px !important;
+    padding: 0 20px !important;
+}
+
+/* ===================================================
+   3. CONTAINER &amp; SIDE PADDING (Pulls away from edges)
+   =================================================== */
+/* Pulls fluid and standard containers inward so cards do not touch browser borders */
+.sp-page-root &gt; div &gt; .container-fluid,
+.sp-page-root .container-fluid,
+.sp-page-root .container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+.sp-page-root .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-top: 30px !important;
+    padding-bottom: 40px !important;
+}
+
+/* ===================================================
+   4. UNIFORM WHITE ACTION CARDS (Icon Links)
+   =================================================== */
+.iconlink {
+    background-color: #ffffff !important;
+    border: 1px solid #e2ece9 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 16px rgba(168, 213, 226, 0.18) !important;
+    min-height: 210px !important;
+    margin: 10px 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 24px !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+/* Card titles */
+.iconlink h2, 
+.iconlink h3, 
+.iconlink h4 {
+    color: #2c3e50 !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    margin-top: 14px !important;
+    margin-bottom: 8px !important;
+}
+
+/* Card descriptions */
+.iconlink p, 
+.iconlink .text-muted {
+    color: #4a686e !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+}
+
+/* Card icons */
+.iconlink i, 
+.iconlink .fa {
+    font-size: 38px !important;
+    color: #2c3e50 !important;
+}
+
+/* Card hover animation */
+.iconlink:hover {
+    transform: translateY(-4px) !important;
+    border-color: #b5ded8 !important;
+    box-shadow: 0 10px 22px rgba(168, 213, 226, 0.32) !important;
+}
+
+/* ===================================================
+   5. FLOATING CHAT BUTTON (Matching Pastel Teal)
+   =================================================== */
+.sn-va-widget-btn, 
+.sp-ac-btn, 
+button[aria-label="Chat"] {
+    background-color: #79a8a9 !important;
+    border-color: #79a8a9 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 16px rgba(121, 168, 169, 0.35) !important;
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>demo_page</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 05:03:41</sys_created_on>
+        <sys_id>c694d1dea07b03107f44038e1c62d74d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>demo_page</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sp_page_c694d1dea07b03107f44038e1c62d74d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 07:12:15</sys_updated_on>
+        <title>Demo Page</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=c694d1dea07b03107f44038e1c62d74d"/>
+</record_update>

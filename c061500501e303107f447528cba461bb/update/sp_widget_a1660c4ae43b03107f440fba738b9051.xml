@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+     var s = document.createElement('script');
+     s.src = 'https://YOUR-CHATBOT-SCRIPT-URL.js';
+     s.async = true;
+     document.body.appendChild(s);
+   };]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>this is demo support chatbot</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>patient_demo_support</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Patient Demo Support</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 04:47:57</sys_created_on>
+        <sys_id>a1660c4ae43b03107f440fba738b9051</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patient Demo Support</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sp_widget_a1660c4ae43b03107f440fba738b9051</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:47:57</sys_updated_on>
+        <template><![CDATA[<div id="chatbot-container">
+</div>]]></template>
+    </sp_widget>
+</record_update>

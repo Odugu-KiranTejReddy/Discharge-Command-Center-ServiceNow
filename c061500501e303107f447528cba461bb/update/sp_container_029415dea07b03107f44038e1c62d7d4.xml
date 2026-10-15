@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <aria_label/>
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name>dcc-hero-banner</container_class_name>
+        <name>Demo Page - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="demo_page">c694d1dea07b03107f44038e1c62d74d</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 05:03:41</sys_created_on>
+        <sys_id>029415dea07b03107f44038e1c62d7d4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Demo Page - Container 1</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sp_container_029415dea07b03107f44038e1c62d7d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 07:05:42</sys_updated_on>
+        <title/>
+        <width>container-fluid</width>
+    </sp_container>
+</record_update>

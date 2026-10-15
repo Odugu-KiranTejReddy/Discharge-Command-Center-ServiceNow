@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="DELETE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>311c25597dfb43107f44ba723780bc76</image>
+        <name>upload_accenture_1791346343489_85b7xz.jpeg</name>
+        <size_bytes/>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 04:12:23</sys_created_on>
+        <sys_id>2d1c25597dfb43107f44ba723780bc70</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>upload_accenture_1791346343489_85b7xz.jpeg</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>db_image_2d1c25597dfb43107f44ba723780bc70</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 04:12:25</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>db_image_2d1c25597dfb43107f44ba723780bc70</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category/><format/><height/><image>311c25597dfb43107f44ba723780bc76</image><name>upload_accenture_1791346343489_85b7xz.jpeg</name><size_bytes/><sys_class_name>db_image</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-07 04:12:23</sys_created_on><sys_id>2d1c25597dfb43107f44ba723780bc70</sys_id><sys_mod_count>1</sys_mod_count><sys_name>upload_accenture_1791346343489_85b7xz.jpeg</sys_name><sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package><sys_policy/><sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope><sys_update_name>db_image_2d1c25597dfb43107f44ba723780bc70</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-07 04:12:25</sys_updated_on><thumbnail/><width/></db_image></record_update>]]></payload>
+        <payload_hash>460372273</payload_hash>
+        <record_name>upload_accenture_1791346343489_85b7xz.jpeg</record_name>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 05:11:01</sys_created_on>
+        <sys_id>5213c3ad69f703107f442a5a2042f373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a119ec09fa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 05:11:01</sys_updated_on>
+        <type>Images</type>
+        <update_guid>9213c3adc3f703102ba0f1ec8db88472</update_guid>
+        <update_guid_history>9213c3adc3f703102ba0f1ec8db88472:460372273,0e1c6959fafb43103bbc57cbb2af5d4f:112225349,391c6959d9fb4310db2ba3da0cfcfb48:-911808552,e91c25597cfb4310fccf5c52801aed72:1974116505</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="upload_accenture_1791346343489_85b7xz.jpeg">4c2307ad69f703107f442a5a2042f308</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 05:11:09</sys_created_on>
+        <sys_db_object display_value="" name="db_image">db_image</sys_db_object>
+        <sys_id>5317454ef61e46d3a6f61b959a573041</sys_id>
+        <sys_metadata>2d1c25597dfb43107f44ba723780bc70</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>upload_accenture_1791346343489_85b7xz.jpeg</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>db_image_2d1c25597dfb43107f44ba723780bc70</sys_update_name>
+        <sys_update_version display_value="db_image_2d1c25597dfb43107f44ba723780bc70">5213c3ad69f703107f442a5a2042f373</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 05:11:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

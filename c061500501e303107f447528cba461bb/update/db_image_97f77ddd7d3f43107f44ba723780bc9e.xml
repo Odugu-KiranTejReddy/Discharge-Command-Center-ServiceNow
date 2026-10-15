@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>abf77ddd7d3f43107f44ba723780bca3</image>
+        <name>upload_logo_acc_1791349464229_5f7ng8.png</name>
+        <size_bytes/>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 05:04:24</sys_created_on>
+        <sys_id>97f77ddd7d3f43107f44ba723780bc9e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>upload_logo_acc_1791349464229_5f7ng8.png</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>db_image_97f77ddd7d3f43107f44ba723780bc9e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 05:04:25</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>logo acc.png</file_name>
+        <hash>d19aa066c631c5b13255ee042ff157ea94518d66ee4dc9c0acf87173db9aa3d4</hash>
+        <image_height>148</image_height>
+        <image_width>184</image_width>
+        <size_bytes>2121</size_bytes>
+        <size_compressed>2144</size_compressed>
+        <state/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 05:04:24</sys_created_on>
+        <sys_id>abf77ddd7d3f43107f44ba723780bca3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 05:04:24</sys_updated_on>
+        <table_name>db_image</table_name>
+        <table_sys_id>97f77ddd7d3f43107f44ba723780bc9e</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo acc.png" sys_id="abf77ddd7d3f43107f44ba723780bca3">abf77ddd7d3f43107f44ba723780bca3</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 05:04:24</sys_created_on>
+        <sys_id>2ff77ddd7d3f43107f44ba723780bca3</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2848</length>
+        <position>1</position>
+        <sys_attachment display_value="logo acc.png" sys_id="abf77ddd7d3f43107f44ba723780bca3">abf77ddd7d3f43107f44ba723780bca3</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 05:04:24</sys_created_on>
+        <sys_id>eff77ddd7d3f43107f44ba723780bca3</sys_id>
+    </sys_attachment_doc>
+</record_update>

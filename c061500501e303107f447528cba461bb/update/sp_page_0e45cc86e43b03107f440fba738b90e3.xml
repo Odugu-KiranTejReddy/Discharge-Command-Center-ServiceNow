@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>.dcc-hero-banner {
+    background: linear-gradient(135deg, #0097a7 0%, #006064 100%) !important;
+    padding: 50px 0 !important;
+    color: #ffffff !important;
+    text-align: center;
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>demo_page_id</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>true</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 04:39:57</sys_created_on>
+        <sys_id>0e45cc86e43b03107f440fba738b90e3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>demo_page_id</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sp_page_0e45cc86e43b03107f440fba738b90e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 05:54:53</sys_updated_on>
+        <title>Demo Page </title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=0e45cc86e43b03107f440fba738b90e3"/>
+</record_update>

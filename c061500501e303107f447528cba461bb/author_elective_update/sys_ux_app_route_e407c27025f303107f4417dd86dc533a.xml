@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Patient Discharge Command Center">8ed3c2f825b303107f4417dd86dc5369</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>home</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">1e3d29d9ff9c321033b2ffffffffffa2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>home</route_type>
+        <screen_type display_value="home">e407c27025f303107f4417dd86dc5336</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 16:53:03</sys_created_on>
+        <sys_id>e407c27025f303107f4417dd86dc533a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>home</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_ux_app_route_e407c27025f303107f4417dd86dc533a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 16:53:03</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=e407c27025f303107f4417dd86dc533a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>sys_ux_app_route_e407c27025f303107f4417dd86dc533a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Patient Discharge Command Center">8ed3c2f825b303107f4417dd86dc5369</app_config><description/><extension_point/><fields/><icon/><interoperable>false</interoperable><name>home</name><optional_parameters/><order>0</order><parent_macroponent display_value="Portal App Shell">1e3d29d9ff9c321033b2ffffffffffa2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>home</route_type><screen_type display_value="home">e407c27025f303107f4417dd86dc5336</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-05 16:53:03</sys_created_on><sys_id>e407c27025f303107f4417dd86dc533a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>home</sys_name><sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package><sys_policy/><sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope><sys_update_name>sys_ux_app_route_e407c27025f303107f4417dd86dc533a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-05 16:53:03</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=e407c27025f303107f4417dd86dc533a"/></record_update>]]></payload>
+        <payload_hash>-746101794</payload_hash>
+        <record_name>home</record_name>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 16:53:03</sys_created_on>
+        <sys_id>e007c27025f303107f4417dd86dc533e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a10cfbaf5f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 16:53:03</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>a407c2701ef30310de862658e0aa263d</update_guid>
+        <update_guid_history>a407c2701ef30310de862658e0aa263d:-746101794</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 17:51:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>6584e992415e40de9618b65f47d2c304</sys_id>
+        <sys_metadata>e407c27025f303107f4417dd86dc533a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>home</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_e407c27025f303107f4417dd86dc533a</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_e407c27025f303107f4417dd86dc533a">e007c27025f303107f4417dd86dc533e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 17:51:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

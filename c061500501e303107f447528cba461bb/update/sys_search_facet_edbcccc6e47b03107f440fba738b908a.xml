@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_facet">
+    <sys_search_facet action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_facet_name>sc_cat_item.sc_catalogs</ais_facet_name>
+        <label>Catalogs</label>
+        <name>Catalogs</name>
+        <option_limit>10</option_limit>
+        <order>30</order>
+        <search_context_config display_value="Now Assist in Virtual Agent - 1">9bac0cc6e47b03107f440fba738b9012</search_context_config>
+        <sort_by>count</sort_by>
+        <sys_class_name>sys_search_facet</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 05:11:09</sys_created_on>
+        <sys_id>edbcccc6e47b03107f440fba738b908a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_cat_item.sc_catalogs</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_search_facet_edbcccc6e47b03107f440fba738b908a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 05:11:09</sys_updated_on>
+        <type>single_select</type>
+    </sys_search_facet>
+</record_update>

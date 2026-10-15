@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=280739000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>discharge_readiness_score</internal_name>
+        <label_cache>[{"name":"9cbb3695-80e4-4b08-a31f-860060155fec.Count","label":"4 - Look Up Records➛Count","type":"integer","base_type":"integer","usedInstances":{"7d1b3ea7-2771-4f26-95ba-f2d8df5b1bc5":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Discharge Task Record","reference":"x_snc_discharge_0_discharge_task","reference_display":"Discharge Task","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{},"attributes":{"":""}},{"name":"d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"0f428a3c-ef73-448e-9cbc-f0578786fe6e":["overall_readiness"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.discharge_case","label":"Trigger - Record Updated➛New Discharge Task Record➛Discharge Case","reference":"x_snc_discharge_0_discharge_case","reference_display":"Discharge Case","type":"reference","base_type":"reference","parent_table_name":"x_snc_discharge_0_new_discharge_task","column_name":"discharge_case","usedInstances":{"0f428a3c-ef73-448e-9cbc-f0578786fe6e":["record"],"5ab22b2c-214b-4576-a7a9-a7a0718c1af2":["record"],"27372185-558e-431f-8fb6-371d968fa20b":["record"],"c121e509-37c6-4dca-94ce-e326e81f36da":["record"],"d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2":[null],"49d14232-516b-467b-b11a-9acb35013c4f":[null],"9cbb3695-80e4-4b08-a31f-860060155fec":[null]}},{"name":"49d14232-516b-467b-b11a-9acb35013c4f.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{},"attributes":{}},{"name":"Updated_1.table_name","label":"Trigger - Record Updated➛New Discharge Task Table","reference":"x_snc_discharge_0_new_discharge_task","reference_display":"New Discharge Task","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>63e375b8253303107f4417dd86dc53a9</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Discharge Readiness Score</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>27326b29693f03107f442a5a2042f3ee</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:28:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba43762ce47303107f44b348f9c59ff4</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name>Discharge Readiness Score</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_hub_flow_ba43762ce47303107f44b348f9c59ff4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:06</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>1842ab29693f03107f442a5a2042f368</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_discharge_0_new_discharge_task">statusINBlocked,Completed,In Progress<item display_value="Blocked,Completed,In Progress" endquery="false" field="status" goto="false" newquery="false" operator="IN" or="false" value="Blocked,Completed,In Progress"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 07:27:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>27326b29693f03107f442a5a2042f3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:06</sys_updated_on>
+        <table>x_snc_discharge_0_new_discharge_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>ba43762ce47303107f44b348f9c59ff4</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 07:27:06</sys_created_on>
+        <sys_id>2b326b29693f03107f442a5a2042f3ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:06</sys_updated_on>
+        <trigger display_value="">27326b29693f03107f442a5a2042f3ee</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ba43762ce47303107f44b348f9c59ff4^sys_idNOT IN2b326b29693f03107f442a5a2042f3ef"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ba43762ce47303107f44b348f9c59ff4^sys_idNOT IN3a43762ce47303107f44b348f9c59ff7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ba43762ce47303107f44b348f9c59ff4</id>
+        <name>Discharge Readiness Score</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:28:03</sys_created_on>
+        <sys_id>3a43762ce47303107f44b348f9c59ff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:28:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3a43762ce47303107f44b348f9c59ff7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ba43762ce47303107f44b348f9c59ff4^sys_idNOT IN3db3b66ce47303107f44b348f9c59fcb,46b3b66ce47303107f44b348f9c59fe3,e9b3b66ce47303107f44b348f9c59f45"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</model>
+        <model_id>ba43762ce47303107f44b348f9c59ff4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ba43762ce47303107f44b348f9c59ff4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:29:54</sys_created_on>
+        <sys_id>3db3b66ce47303107f44b348f9c59fcb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3db3b66ce47303107f44b348f9c59fcb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</model>
+        <model_id>ba43762ce47303107f44b348f9c59ff4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ba43762ce47303107f44b348f9c59ff4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:29:54</sys_created_on>
+        <sys_id>46b3b66ce47303107f44b348f9c59fe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:29:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=46b3b66ce47303107f44b348f9c59fe3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</model>
+        <model_id>ba43762ce47303107f44b348f9c59ff4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ba43762ce47303107f44b348f9c59ff4</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:29:53</sys_created_on>
+        <sys_id>e9b3b66ce47303107f44b348f9c59f45</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e9b3b66ce47303107f44b348f9c59f45"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ba43762ce47303107f44b348f9c59ff4^sys_idNOT IN9cd3fa6ce47303107f44b348f9c59f30"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:30:21</sys_created_on>
+        <sys_id>9cd3fa6ce47303107f44b348f9c59f30</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:02</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VaXXPaOBT9Kxo/7c7QHRvzEbJPKUm2mWmTHUK7D52MR5Zk8MTI1JJN2E7/+175A4y/AsF06VOCJEvnXp17joT5+l3zsM087VKbYttjWkdzuWQBx950vWTQLFWzxfFC9S0wp1j6wVq7lEHIOpoT+IspWyw9LGGwgz0BjX5AWaBdGh0twl7IHtfijsJM8Hw8TTqnlnbD5xdLcGJRV5A5DmbM0i3OVrnPEotnGA4NsND6S/rUPVuh62wMmiZjyNz1aMC4dvn1qaMtcQArSoXme6HLVZAMSrHRZToxDbPb1fXuRc+wB6ZtdKmJGb6ACYvpKYQgK7K0jZ+9SMYpo5vUlBIYMEwfuLfOjXgR7r8w54Wueh0GiAlL0rf5aKWpSJrJ3HcJe1hK1+dJS4Iu6fS9cMHvE9QqiczBoSezJEJLKGA+tlRAudzgcB7n/mqSLXjr8jimtNPzCfY2n7CUgWuHkgmVZsf1IOFWkhHhh0GMfnIzfphcW/9cTccfbibW5OZxOrkbT2+utR9xXNa3UM2YIEyxWEk4PzY7f+syT20bDxc2oOloggTuUl4R6UYZ/X50tpQe+5y6cVZKtCZZl9ildRZ9E691vZbZJLdixm4hsQzF3f17yNozo52xD/MCKWnnjqO/A38WMCEOpq5tjzBluIa6g2GOuvk0VOCUFRnJh9pE4rSlnsU9Xf+feJwK1FtpnEVt+UsWqGihVfty9XH84er+r5vHP9O/t5OHT9n/0wdAscJcCkv6FqbUyuUUNAIAKbL5lHnXW5zQ7s5mUDEuX4ZSvFoPSU7KRfF6OQQhhymszX6WiyLegM1OfHQF4PsKJf3IvoXJ9r0DVXOypKcROR/TBSYhRz5HJAwg2xIBTVC2GIphK2o5dws8S7cMJvYYkTluOZ9F/tMnVwiXz3LB1GGJB5TBeOs8oky1j8Hw1KZelLckKsRTML2DdWJAqNGzhwN9qFTC0E3bMfSh3scONXV9ZOZ0ogymFqUsEKZFvThMLURMUG+PPS8mNoWs5ytkLwJHu+zPQlfESEVp3A40oyVoXQWtIK7mQeq6IWPSfL3LyabQWj5cYBpheIJmMe5zeNhDFR3PX4H+Hq+Ijh+wWeCHnBalSC2BXPi7M+I0Wmhj8tyMYjsC/ZZu6u/npovbTclojfm6BUXsMUKHg95AByE0QQPt/mhkE9x1nOFgyHRaUMQtjEpsZ6yEr2x2VMWWOlWspG9UxfoD9PAIgCVtPBjg8aqY0rFSE5O+X0P9VnPGLYAaWJ7St5IIzjyXsqyv3RovLR1tq/rYOjedC9rvD4dkCLcjqHOnx2xs9Lp9PBoOTDYo1HkJShNMWZGZE96ZxFrEy9dowOek67y+BzglWQWTUlnP0X4dP46T9XJWqfYFxariB0hlF91tB6JHuK8nV+dT+bcv5yXnBiTvoX0HiToF3vv8XQW6E161ONwF9klcDbJzO2cUGBXtbsLRp40Lc9SnjlmtQsNulQptwdTDPNNzx54EiGqpVHUA2bcco8qqrj0xvKGiCuTIHyUazjptJcVoPSnd0yXFPPp8lVVg7aXzLWB/IZeLDxytWZ3PmeU7lWLtOij9EpJRZK+RnDPIrQcnalgZKRgndJPkpFzyOmhG6ZHnZDam9qSYlGsfQQcKfkpaTuNlBd60e3smzsimI7PmVN2vP1XXm1qh+0yd7WBiRFU8a7S3w+YtzllpcLky2uXBntbVatTV/nVc1JUO9lrUx3tT092/AsX5u44CPU22oQ2vIYVrATn2tUuDkLOIBTsecgvJjxtRuKRKRU+2dMhdaLfIHPNZ8nZrBwMmc5QMQcmQE9qot8JrsZt0KDAoLlW/6dfy0ACVzBOd/cnG1fBzkPQFqJABPDlb71Q7aeMlGDFG/a5JL4hpjMzy7zyMnGnt1kE9wlqXeuVnH3UuNXfjl8G55VMKS3fBYk3cvExGCyzJnIkOAo7FL15iyXQDIePRf2gtXucIK29HlYnV8j2qK5VaU2jgbFRke5ULVJR/VJCKvA80XtwawjdaCb/bRvjm28LvHW2DWX1W+mCavZa9L7WzN/nd03+e00lI8CYAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ba43762ce47303107f44b348f9c59ff4^sys_idNOT INd88af2a8e4b303107f44b348f9c59fd2,76aa3aa8e4b303107f44b348f9c59f99,41b43aece47303107f44b348f9c59fcc,42763ea0e4b303107f44b348f9c59f8e,e0e67ae0e4b303107f44b348f9c59f00,e3b93e28e4b303107f44b348f9c59f34"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>7d1b3ea7-2771-4f26-95ba-f2d8df5b1bc5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:59:33</sys_created_on>
+        <sys_id>d88af2a8e4b303107f44b348f9c59fd2</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:30</sys_updated_on>
+        <ui_id>5ab22b2c-214b-4576-a7a9-a7a0718c1af2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPKEqAopa3CYQ0qWultuOlq6wb+wLWnI/ZDoUh/vtuEidQ+jEq9WGVxtv99DmHe5T7LVOSjdgAZRhdREPRj/r9Xhj2zgdRPOzHUU/2ATFiXZZCgtRpUGRGUrwCXZSJ7fZ7LsGh5FEgCmMwdYFUVizBLJALsLjbUTulcg2bmZ+ijFgqLamdje4fuiwHQw84NGy0PSqdilBDjJpabxqIx5DdJi9jmYkiIZhcNclLPznxlc7XCVVoqIQThV2Ga4epRAIyB22xyxJIiXRmNmzkTEEJgyCvU71pO5YqdTXRBNZW/aaXB2HZN0diJrwIbci9QHV6PgEHt7RZuMK0emVKoK01kTiHQrvxYa5uuM6dytJ6xEGsm+lMF0l6VSvC2gUH/0dhCQTmJc8SeU1rfrvMHm8akFOVVpJ4ijoToNsInDMqLlwJZ8tQY6VxAnmu0gXPTbZS1TBBSYKFpiCY6+yR3rRqkQYgStwBqQrBlPKTKj0Do0oS32gNDe+6zG7sWIO1eyqkIf9VlEhqYp4Cr1SoJODVJZTDwqjcfaGnVuiB77reA2HvzQvD/UFVp28PPLAEy6FaymMS5SeaH0UY9mWp4fPb/0v3+3xxAurGF1OFWtoXaHhfOEwIpkNe03pqjTtf7Mx8sXXHh9kjGobV779J/l2TxGdvnZu42F/Xwc69UdbcpoLvPw8hf/qpeG6WSVPvjOv6++xxAt7GHnfVHbyMv3HIce7ycLZzVRe8M84+zBjnn8kSnsan98RrTnj4A65cb1U0CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d88af2a8e4b303107f44b348f9c59fd2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>2b89fa15-4e52-405c-89b5-f8f8b0c5411d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 02:00:17</sys_created_on>
+        <sys_id>76aa3aa8e4b303107f44b348f9c59f99</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:30</sys_updated_on>
+        <ui_id>c121e509-37c6-4dca-94ce-e326e81f36da</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V227aQBD9FbTPyLKBoIS3CoRUKU2kJOUljVbj3QFWXV+6uyZQxL93bK8NIZfSKg+NVN7mtnPOYY58v2VKshEboAyji2go+lG/3wvD3vkgiof9OOrJPiBGrMtSSJA6DYrMSIpXoIsysd1+zSU4lDwKRGEMpi6QyoolmAVyARZ3O2qnVK5hM/NTlBFLpSW1s9H9Q5flYGiBQ8NG26PSqQg1xKip9aaBeAzZbfIylpkoEoLJVZO89JMTX+l8nlCFhko4UdhluHaYSiQgc9AWuyyBlEhnZsNGzhSUMAjyOtWbtmOpUlcTTWBt1U/aPAjLvjkSM+FFaEPuBarT8wk4uKWXhStMq1emBNpaE4lzKLQbH+bqhuvcqSytRxzEupnOdJGkV7UirH3g4P8oLIHAvORZIq9pzW+X2eNNA3Kq0koST1FnAnQbgXNGxYUr4WwZaqw0TiDPVbrguclWqhomKEmw0BQEc5090k6rFmkAosQdkKoQTCk/qdIzMKok8YWeoeFdl9mNHWuwdk+FNOQ/ihJJTcxT4JUKlQS8uoRyWBiVu0+0aoUe+K7rPRD23rww3B9Udfr2wANLsByqR3lMonxH860Iw76sFjw//t+1/5kzTsDdOGOqUEv7AhHvDIcJ4XTIa2JPzXHni52ZL7b+eDeDRMOw+v23yb9rk/jsrXMTF/vrOnhzb5U1t6ng+w9EyJ9+LJ67ZdLUO2P4C3ucgLexx111By/jbxxynLs8nO1c1QXvjLN3M8b5R7KEp/HhPfGaEx5+AQS7UcA2CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=76aa3aa8e4b303107f44b348f9c59f99"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:34:13</sys_created_on>
+        <sys_id>41b43aece47303107f44b348f9c59fcc</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:30</sys_updated_on>
+        <ui_id>d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VW227bMAz9FcPPQSAvadr1bUhQYEAvQNv1pesEWZIToYrtSXIuDfLvoyxf0sTNks0FOuzJEEmJ5OE5lh5XvmD+uY+iPkIkODk7RajXQ2gw6FEShGFvQEMUnnz2O35MphwidaIMNsuUg2lGZFbZiKZgYkKnkiwfCg/xTOK9gJ1OhGSKx/7541PHT4mC0wxX/vlqy3VoOZKEXELoHeT27l09DSXmn3PIkQhari+LrcPSmChmS+l1fL4wPGYcaoiI1LzjT0nMiEnUsrIoTthNLGvDRMQGTvNt8EKLF8jX+2TjIg5dUe581RIXEDlzNCKG3BmVUZOpItQVqwGPVdVmBWQD5kX5aN2p419sPNmOZ3xzQ7AGvBmPSCbN8M9yBsfm/GRzugZvUiMSmLrfs3MhoSzbT2Q2ja/dLP2qwocGsjnP6A3OZRrA5qkdqJ1QMa7obpLMb8tpXIg4r6twyoQSWa2IMUqEmbG4rPyI4UhwybCIpYhtJhibpQ+XfAoZ8JSkqYjHOFXJTOSnQi/T7ljCohvJZG6xEOO4S6jtvAvEIt0LsI9y8wNRwqJwBcfA5o5NOIGtRT6sqRKpwXPBxtzU2csolpg5kc9N/oJxuBxU3p6/7vh6qYeSaF2DDTTFPzOLgYO+QA/ng8q35FV8gQ5mvADKciCXLT3dK9uTLYm6QW/wZff/cfSf44ASShRuLCO9cPlWVcWvw808j3j9+7iwDu/aOUp6t/YLOUPt/EKaJL4rwaMUuCstS7W/UNY7CqhJsccT32HzG/b3915ag6DmGQwZK64BUr3B/gAhtKuAoOPMx8nggFpKGVyRhXdbFdNYYaEEICkf58BuyuBrZS000G9NA/2Pq4FyWI03UDmzli+g95FJ+9fA2f7XG6ppRpOYCVvjpg5gsHRC1JhjSjT/nsEhbLX6lkIbnOGgSzMFyJnu67j1+oc2xGTabRgm01SCQNiuolo//zhpHoBOKc3hJjxNkJWv223bZdMB5ZOtRXmijyvQf+SSeqe7aD/J+mHNJ3dcrb4F1jHFNfcRjvl8Y22Ift7V1DWfe6Myxrt3MW3qIi+51MV9UfNWC4Ua8mXTgy3ftvVgQ//ng+1jXkVQkJDAEOxGqJNM5VDOMJWZzh2KxNqd1eLF9fQLMl9MBwcRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=41b43aece47303107f44b348f9c59fcc"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:41:56</sys_created_on>
+        <sys_id>42763ea0e4b303107f44b348f9c59f8e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:30</sys_updated_on>
+        <ui_id>49d14232-516b-467b-b11a-9acb35013c4f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VW227bMAz9FcPPQSAvadr1bUhQYEAvQNv1pSsEWZYToYrtSXIuDfLvoyRf0sTNktUFOuzJEEmJ5OE5lh5XPo/8cx/FfYRIcHJ2ilCvh9Bg0KMkCMPegIYoPPnqd/yETBlEqlRqrJcZA9OMiLyyEUXBFHGVCbJ8KDzE06n3AnY64SKSLPHPH586fkYknKaZ9M9XW65DyxEkZAJC7yC3d+/qaSjRfs4hR8ppub4stg5LYyojU0qv47OFZknEoIaYCMU6/pQkEdGpXFYWyUh0k4jaMOGJhtN8E7xQ/AXy9b6YuJhBV5Q5X7XEBUTOHI+IJnda5lTnsgh1xSrAY1W1WQHZgHlRPlp36vgXE0+24yO2uSFYA94Ri0ku9PDvcgbH5vxicroGbzLNU5i63zNzIaEo209FPk2u3Sz9qsKHBrI5z+gNzuUKwGaZGaiZUDGu+G6Szm/LaVzwxNZVOEVKiahWRGvJw1wbXFZ+HOGYMxFhngiemEwwNkMfJtgUMuApyTKejHEm0xm3p0Iv0+5YwKIbi3RusODjpEuo6bwLxCLdC7CPrPmBSG5QuIJjYHPHJJzA1iIfVlTyTOM5j8ZM19nLqCjVcyKem/wF43A5KNuev+74aqmGgihVgw00xb9yg4GDvkAP20HZLbaKb9DBjBVAGQ5Y2dLTvbI92ZKoG/QGX3b/H0f/OQ4ooUThxjDSC5dvVVX8OtzMbcTr38eFcXjXzlHSu7VfyBlq5xfSJPFdCR6lwF1pGaq9Q1kfKKAmxR5PfIfNH9jf33tpDYKaZzBkLJkCSNUG+wOE0K4Cgo4zHyeDA2opZXBFFt5tVUxjhYUSgKRsbIHdlMH3ylpooN+aBvqfVwPlsBpvoHJmLV9AHyOT9q+Bs/2vN1TTjKZJxE2NmzqAwdIJkWOGKVHsZw6HRKvVjwzaYBEOujSXgJzuvo5br3e1846TjpPbAR2XchtuttwEQ/li3bZdNh1QPsNalBz6vKL7Ry6eD7pf9pOsH9Z8csfVilpglVBcsxzhhM031pqo5131XLO5NypjvHsX06YubMmlLu6LmrdaKNRgl02PMLtt6xGG/s9H2Oe8XqAgLoAh2I1Qpbm0UM4wFbmyDkkS5c5q8TJ6+g19sOXI2xAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=42763ea0e4b303107f44b348f9c59f8e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:43:44</sys_created_on>
+        <sys_id>e0e67ae0e4b303107f44b348f9c59f00</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:30</sys_updated_on>
+        <ui_id>0f428a3c-ef73-448e-9cbc-f0578786fe6e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf2yhp2q7p20SFNImBBIwXQJZj37SWHCeznUIX9b/vJnHawhgCiYchLW/3yz7n+B7ltiZSkAWZgAijJJrxOIrjcRiO55MoncVpNBYxA4jIkGiWA3Ya4IURGG+YqppEXf8oBXMgaBTwyhjQLhDS8jUzK6CcWdjtsB1TpWLbGz+FGb6WSmA7WdzeD0nJDF7gwJBF/az0VoSKpaCw9bKH+Byy25ZNLApe5QiTyj555ieXvjL4tsQKDjVwonBI4NGBFoBAMqYsDEnONJIuzJYsnKkwYYCJC622+4611K4jmrNHK3/hzZOw6csAmXEvwj6kXqAunS2ZY1d4MneV2etVSA6200RAxirlTo5zXcNF6WShuxHHUtVPF6rK9XmnCNkfcPQelUUQUDY8G+QdrexqXTxc9iBPpW4l8RRVwZnaR8w5I9PKNXBqAgpajXNWllKvaGmKjWyHEUoerBQGQaaKB7zTypUOGG9wB6gqC04xv2zTN8zIhsR3PAaHd0Nit/ZEMWsPVFBD+rNqkHTEPAXaqtBKQNtNaIa5kaX7ildtwAPfDb0HwvGrGwaHhWpX3x55oNiAYUrRZgmkBmvvqjCMRV1ngjrDtM0Kky/GUTZNsiQcQTL9MprgA4yScTIfzeJkNoU0nsznk5e88sGnv893b1Cl992pBCXsCzJ53znIkZYD2sn21HrXvji48cW9+z7MftEsbL//Jvx3TZhOX1s3nhy26+jMgxEfqdWcHn4/IX36K/rTXMu+Pjjp6u+zxxvw9va4bvfgZfy9Q57nzo5nB+ddwTtj+mHGmH8mS3gan94Tf3PC/W/8nbomlAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0e67ae0e4b303107f44b348f9c59f00"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:56:14</sys_created_on>
+        <sys_id>e3b93e28e4b303107f44b348f9c59f34</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:30</sys_updated_on>
+        <ui_id>9cbb3695-80e4-4b08-a31f-860060155fec</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VW227bMAz9FcPPRiA3adrlbUtQYEAvQNv1pesEWZYToYrtSXIuDfLvoyxf0sTNks0FOuzJEEmJ5OE5lh5XLg/dgYuiHkLEPz0/Q6jbRajf71LiB0G3TwMUnH5yPTcmUwaRKpEa62XKwDQjIqtsRFEwhVylgiwfCg9xdOK8gJ1OuAgli93B45PnpkTCaZpJd7Dach1ajiABExB6B7mde1tPQ4n5ZwA5Ek7L9WWxdVgaExmaUrqeyxaaxSGDGiIiFPPcKYlDohO5rCySkfAmFrVhwmMNp7kmeKH4C+Trnpi4iEFXlFlftcQFRNYcjYgmd1pmVGeyCLXFKsBjVbVZAdmAeVE+Wnt1/IuJJ9vxIdvc4K8B75BFJBN6+Gc5/WNznpictsGbVPMEpu52zVxIIMr2E5FN42s7S7eq8KGBbNYzeoNzmQKwWWoGaiZUjCu6myTz23IaFzzO6yqcIqFEVCuiteRBpg0uKzcKccSZCDGPBY9NJhiboQ8TbAoZ8JSkKY/HOJXJjOenQi/TzljAohOJZG6w4OO4Q6jpvAPEIp0LsI9y8wOR3KBwBcfAZs8knMDWIh9WVPJU4zkPx0zX2cuoMNFzIp6b/AXjcDmovD137blqqYaCKFWDDTTFPzODgYW+QA/ng8q35FV8hg5mrADKcCCXLT3bK9vTLYnaQW/wZff/cfSf44ASShRuDCOdYPlWVcWvw848j3j9+7gwDufaOkp6t/YLOUft/EKaJL4rwaMUuCstQ7W/UNY7CqhJsccT32LzG/b39l5afb/mGQwZS6YAUrXBfh8htKsA37Pm42RwQC2lDK7IwrmtimmssFACkJSNc2A3ZfC1shYa6LWmgd7H1UA5rMYbqJxZyxfQ+8ik/WvgfP/rDdU0o0kcclPjpg5gsHRC5JhhShT7nsEh4Wr1LYU2WIj9Ds0kIKc7r+PW6x9KE50pu+ELAPkMBNzRU8unHyfLA5ApZTnchKYJrvJlu227bDqgfK61KE30ccX5j1xQ73QP7SdZL6j5ZI+rlbfAKqa4Zj7CMZtvrDVRz7uKumZzZ1TGOPc2pk1d5CWXurgvat5qoVBDvmx6rOXbth5r6P98rH3MawgK4gIYgu0IVZLJHMoZpiJTuUOSWNmzWry0nn4BecmQDwMRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e3b93e28e4b303107f44b348f9c59f34"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ba43762ce47303107f44b348f9c59ff4^sys_idNOT IN763aba68e4b303107f44b348f9c59f40,639ab6a8e4b303107f44b348f9c59f27"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f23aba68e4b303107f44b348f9c59f3f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:58:21</sys_created_on>
+        <sys_id>763aba68e4b303107f44b348f9c59f40</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:02</sys_updated_on>
+        <ui_id>7d1b3ea7-2771-4f26-95ba-f2d8df5b1bc5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4POiSHHsZHkVnQoMGBbgbXoZSsMWqYTYbLkSXLSLMh/H+WPtGgybNh23M18/Hokn3VgpvVN6929uXJOrjVbfX6cMKkDRt8HpqFGtmLC6FJ6aTSbsC2oNmCHw1IURZIt0+mC43w6L/hiCklcTRcZ5xmP07RCEV2bVvvj8UvLeYKc8kvpGgX7h78sIzZSlRYHyg1YYurRstXhlcvvG8wVFKio2523Uq8pXZZkLSGt0pinIpllyYzz2WIeF1lSxLMyAZxnFDcmXr/YwIWlhCYEubG8sWXgMuMThk8edYnUrwLlcMJq0CV4Y/ds5W1LgEUob7XanyI2UnuqxkLsk5PfMVTiPERWSIMJ7L0nMx+W2sNiY6TA26bj1iEeCjXkCKPaWn/sRwjnwApa5cdzENI6qodNIB1oDJyqu43ZfRob3kjdDTg4lRGgThZ4WkPRenThGqiwpkJ5DU1Dy8kba7aySyYudbRWZESVMjtqGjQYgQjEI9oRRDeEv+3gB7AyTPGBylAyXdDlTljZjLN1zdmx20r+rQ18+vmGSfJ+GRTQp11Rmy0OpI+Tc63nHfAs+HPt/iMZVhyqeCniyzKE5JIM37zvkHMxjqx/osj4F4ockN+SZJr+V+RLRQaaBTgp8u4FpXLh//5jST4G6fUtXK+hEoV0xOQ+YO/GVzo49nR1KV5CO2O/hhmeseMP0Lxtve8FAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">eb9ab6a8e4b303107f44b348f9c59f26</block>
+        <comment/>
+        <connected_to>7d1b3ea7-2771-4f26-95ba-f2d8df5b1bc5</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 02:00:03</sys_created_on>
+        <sys_id>639ab6a8e4b303107f44b348f9c59f27</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:02</sys_updated_on>
+        <ui_id>2b89fa15-4e52-405c-89b5-f8f8b0c5411d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ba43762ce47303107f44b348f9c59ff4^sys_idNOT IN8d6832a4e4b303107f44b348f9c59fe5,8d6832a4e4b303107f44b348f9c59fe6,c56836a4e4b303107f44b348f9c59f98,0d6836a4e4b303107f44b348f9c59f98,416836a4e4b303107f44b348f9c59f99,1b3b5b2969fb03107f442a5a2042f390,1f3b5f2969fb03107f442a5a2042f3bf,533b5f2969fb03107f442a5a2042f3bf"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ba43762ce47303107f44b348f9c59ff4</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>f8f83385-0fa1-43d0-921a-76e1ee12ff3b</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:50:19</sys_created_on>
+        <sys_id>8d6832a4e4b303107f44b348f9c59fe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:50:19</sys_updated_on>
+        <transform_compositions>[{"id":"1c07dd02c303201027d44077d840dd07","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{"":""},"value":"100","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="multiply">28c65502c303201027d44077d840dddd</transform_definition_id>
+        <ui_id>465fd36f-68fc-45d8-91af-4a41a3d64fcc</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ba43762ce47303107f44b348f9c59ff4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2.Count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:50:19</sys_created_on>
+        <sys_id>8d6832a4e4b303107f44b348f9c59fe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:50:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f8f83385-0fa1-43d0-921a-76e1ee12ff3b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ba43762ce47303107f44b348f9c59ff4</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>dad07aa2-1de2-4ec7-aa99-24353d188b34</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:50:19</sys_created_on>
+        <sys_id>c56836a4e4b303107f44b348f9c59f98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:50:19</sys_updated_on>
+        <transform_compositions>[{"id":"1c07dd02c303201027d44077d840dd07","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{"":""},"value":"100","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="multiply">28c65502c303201027d44077d840dddd</transform_definition_id>
+        <ui_id>9685749d-4f60-4bdd-87e4-2576b1936b6e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ba43762ce47303107f44b348f9c59ff4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2.Count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:50:19</sys_created_on>
+        <sys_id>0d6836a4e4b303107f44b348f9c59f98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:50:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dad07aa2-1de2-4ec7-aa99-24353d188b34</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ba43762ce47303107f44b348f9c59ff4</attached_to>
+        <extra_info/>
+        <order>2</order>
+        <prescription/>
+        <source_ui_id>dad07aa2-1de2-4ec7-aa99-24353d188b34</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:50:19</sys_created_on>
+        <sys_id>416836a4e4b303107f44b348f9c59f99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:50:19</sys_updated_on>
+        <transform_compositions>[{"id":"ec7a7362c303201027d44077d840dd87","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{"":""},"value":"6","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="divide">295abf22c303201027d44077d840dd54</transform_definition_id>
+        <ui_id>a99c05ac-fc45-42bb-bc96-9c7dd5307c9e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ba43762ce47303107f44b348f9c59ff4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2.Count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 06:56:30</sys_created_on>
+        <sys_id>1b3b5b2969fb03107f442a5a2042f390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 06:56:30</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>21f59f90-e957-4efa-9298-63965eb34884</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ba43762ce47303107f44b348f9c59ff4</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>21f59f90-e957-4efa-9298-63965eb34884</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 06:56:30</sys_created_on>
+        <sys_id>1f3b5f2969fb03107f442a5a2042f3bf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:02</sys_updated_on>
+        <transform_compositions>[{"id":"1c07dd02c303201027d44077d840dd07","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"100","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="multiply">28c65502c303201027d44077d840dddd</transform_definition_id>
+        <ui_id>3e89fdc9-35d3-44e8-a913-6e00e9242527</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ba43762ce47303107f44b348f9c59ff4</attached_to>
+        <extra_info/>
+        <order>2</order>
+        <prescription/>
+        <source_ui_id>21f59f90-e957-4efa-9298-63965eb34884</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 06:56:30</sys_created_on>
+        <sys_id>533b5f2969fb03107f442a5a2042f3bf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:02</sys_updated_on>
+        <transform_compositions>[{"id":"ec7a7362c303201027d44077d840dd87","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"6","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="divide">295abf22c303201027d44077d840dd54</transform_definition_id>
+        <ui_id>e4ec66fc-7459-4ea9-8355-07042ecce6a5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ba43762ce47303107f44b348f9c59ff4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:29:54</sys_created_on>
+        <sys_id>0ab3b66ce47303107f44b348f9c59fd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:29:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ba43762ce47303107f44b348f9c59ff4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:29:55</sys_created_on>
+        <sys_id>8eb3b66ce47303107f44b348f9c59fea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:29:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ba43762ce47303107f44b348f9c59ff4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 01:29:54</sys_created_on>
+        <sys_id>fdb3b66ce47303107f44b348f9c59fa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 01:29:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ba43762ce47303107f44b348f9c59ff4"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>discharge_readiness_score</internal_name>
+        <label_cache>[{"name":"9cbb3695-80e4-4b08-a31f-860060155fec.Count","label":"4 - Look Up Records➛Count","type":"integer","base_type":"integer","usedInstances":{"7d1b3ea7-2771-4f26-95ba-f2d8df5b1bc5":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Discharge Task Record","reference":"x_snc_discharge_0_discharge_task","reference_display":"Discharge Task","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{},"attributes":{"":""}},{"name":"d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"0f428a3c-ef73-448e-9cbc-f0578786fe6e":["overall_readiness"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.discharge_case","label":"Trigger - Record Updated➛New Discharge Task Record➛Discharge Case","reference":"x_snc_discharge_0_discharge_case","reference_display":"Discharge Case","type":"reference","base_type":"reference","parent_table_name":"x_snc_discharge_0_new_discharge_task","column_name":"discharge_case","usedInstances":{"0f428a3c-ef73-448e-9cbc-f0578786fe6e":["record"],"5ab22b2c-214b-4576-a7a9-a7a0718c1af2":["record"],"27372185-558e-431f-8fb6-371d968fa20b":["record"],"c121e509-37c6-4dca-94ce-e326e81f36da":["record"],"d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2":[null],"49d14232-516b-467b-b11a-9acb35013c4f":[null],"9cbb3695-80e4-4b08-a31f-860060155fec":[null]}},{"name":"49d14232-516b-467b-b11a-9acb35013c4f.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{},"attributes":{}},{"name":"Updated_1.table_name","label":"Trigger - Record Updated➛New Discharge Task Table","reference":"x_snc_discharge_0_new_discharge_task","reference_display":"New Discharge Task","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>Discharge Readiness Score</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Discharge Readiness Score">ba43762ce47303107f44b348f9c59ff4</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>63e375b8253303107f4417dd86dc53a9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=63e375b8253303107f4417dd86dc53a9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=63e375b8253303107f4417dd86dc53a9"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=63e375b8253303107f4417dd86dc53a9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=63e375b8253303107f4417dd86dc53a9^sys_idNOT INafe375b8253303107f4417dd86dc53aa"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>63e375b8253303107f4417dd86dc53a9</id>
+        <name>Discharge Readiness Score</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:42</sys_created_on>
+        <sys_id>afe375b8253303107f4417dd86dc53aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=afe375b8253303107f4417dd86dc53aa"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=63e375b8253303107f4417dd86dc53a9^sys_idNOT INb7e375b8253303107f4417dd86dc53c3,ebe375b8253303107f4417dd86dc53ac,f7e375b8253303107f4417dd86dc53ce"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</model>
+        <model_id>63e375b8253303107f4417dd86dc53a9</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_63e375b8253303107f4417dd86dc53a9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>b7e375b8253303107f4417dd86dc53c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b7e375b8253303107f4417dd86dc53c3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</model>
+        <model_id>63e375b8253303107f4417dd86dc53a9</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_63e375b8253303107f4417dd86dc53a9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:42</sys_created_on>
+        <sys_id>ebe375b8253303107f4417dd86dc53ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ebe375b8253303107f4417dd86dc53ac"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</model>
+        <model_id>63e375b8253303107f4417dd86dc53a9</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_63e375b8253303107f4417dd86dc53a9</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>f7e375b8253303107f4417dd86dc53ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f7e375b8253303107f4417dd86dc53ce"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=63e375b8253303107f4417dd86dc53a9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=63e375b8253303107f4417dd86dc53a9"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=63e375b8253303107f4417dd86dc53a9^sys_idNOT INfbe375b8253303107f4417dd86dc53e5"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>fbe375b8253303107f4417dd86dc53e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:04</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VaXXPaOBT9Kxo/7c7QHRvzEbJPKUm2mWmTHUK7D52MR5Zk8MTI1JJN2E7/+175A4y/AsF06VOCJEvnXp17joT5+l3zsM087VKbYttjWkdzuWQBx950vWTQLFWzxfFC9S0wp1j6wVq7lEHIOpoT+IspWyw9LGGwgz0BjX5AWaBdGh0twl7IHtfijsJM8Hw8TTqnlnbD5xdLcGJRV5A5DmbM0i3OVrnPEotnGA4NsND6S/rUPVuh62wMmiZjyNz1aMC4dvn1qaMtcQArSoXme6HLVZAMSrHRZToxDbPb1fXuRc+wB6ZtdKmJGb6ACYvpKYQgK7K0jZ+9SMYpo5vUlBIYMEwfuLfOjXgR7r8w54Wueh0GiAlL0rf5aKWpSJrJ3HcJe1hK1+dJS4Iu6fS9cMHvE9QqiczBoSezJEJLKGA+tlRAudzgcB7n/mqSLXjr8jimtNPzCfY2n7CUgWuHkgmVZsf1IOFWkhHhh0GMfnIzfphcW/9cTccfbibW5OZxOrkbT2+utR9xXNa3UM2YIEyxWEk4PzY7f+syT20bDxc2oOloggTuUl4R6UYZ/X50tpQe+5y6cVZKtCZZl9ildRZ9E691vZbZJLdixm4hsQzF3f17yNozo52xD/MCKWnnjqO/A38WMCEOpq5tjzBluIa6g2GOuvk0VOCUFRnJh9pE4rSlnsU9Xf+feJwK1FtpnEVt+UsWqGihVfty9XH84er+r5vHP9O/t5OHT9n/0wdAscJcCkv6FqbUyuUUNAIAKbL5lHnXW5zQ7s5mUDEuX4ZSvFoPSU7KRfF6OQQhhymszX6WiyLegM1OfHQF4PsKJf3IvoXJ9r0DVXOypKcROR/TBSYhRz5HJAwg2xIBTVC2GIphK2o5dws8S7cMJvYYkTluOZ9F/tMnVwiXz3LB1GGJB5TBeOs8oky1j8Hw1KZelLckKsRTML2DdWJAqNGzhwN9qFTC0E3bMfSh3scONXV9ZOZ0ogymFqUsEKZFvThMLURMUG+PPS8mNoWs5ytkLwJHu+zPQlfESEVp3A40oyVoXQWtIK7mQeq6IWPSfL3LyabQWj5cYBpheIJmMe5zeNhDFR3PX4H+Hq+Ijh+wWeCHnBalSC2BXPi7M+I0Wmhj8tyMYjsC/ZZu6u/npovbTclojfm6BUXsMUKHg95AByE0QQPt/mhkE9x1nOFgyHRaUMQtjEpsZ6yEr2x2VMWWOlWspG9UxfoD9PAIgCVtPBjg8aqY0rFSE5O+X0P9VnPGLYAaWJ7St5IIzjyXsqyv3RovLR1tq/rYOjedC9rvD4dkCLcjqHOnx2xs9Lp9PBoOTDYo1HkJShNMWZGZE96ZxFrEy9dowOek67y+BzglWQWTUlnP0X4dP46T9XJWqfYFxariB0hlF91tB6JHuK8nV+dT+bcv5yXnBiTvoX0HiToF3vv8XQW6E161ONwF9klcDbJzO2cUGBXtbsLRp40Lc9SnjlmtQsNulQptwdTDPNNzx54EiGqpVHUA2bcco8qqrj0xvKGiCuTIHyUazjptJcVoPSnd0yXFPPp8lVVg7aXzLWB/IZeLDxytWZ3PmeU7lWLtOij9EpJRZK+RnDPIrQcnalgZKRgndJPkpFzyOmhG6ZHnZDam9qSYlGsfQQcKfkpaTuNlBd60e3smzsimI7PmVN2vP1XXm1qh+0yd7WBiRFU8a7S3w+YtzllpcLky2uXBntbVatTV/nVc1JUO9lrUx3tT092/AsX5u44CPU22oQ2vIYVrATn2tUuDkLOIBTsecgvJjxtRuKRKRU+2dMhdaLfIHPNZ8nZrBwMmc5QMQcmQE9qot8JrsZt0KDAoLlW/6dfy0ACVzBOd/cnG1fBzkPQFqJABPDlb71Q7aeMlGDFG/a5JL4hpjMzy7zyMnGnt1kE9wlqXeuVnH3UuNXfjl8G55VMKS3fBYk3cvExGCyzJnIkOAo7FL15iyXQDIePRf2gtXucIK29HlYnV8j2qK5VaU2jgbFRke5ULVJR/VJCKvA80XtwawjdaCb/bRvjm28LvHW2DWX1W+mCavZa9L7WzN/nd03+e00lI8CYAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=63e375b8253303107f4417dd86dc53a9^sys_idNOT IN7be375b8253303107f4417dd86dc53e1,37e375b8253303107f4417dd86dc53e2,33e375b8253303107f4417dd86dc53e3,f7e375b8253303107f4417dd86dc53e3,bfe375b8253303107f4417dd86dc53e3,77e375b8253303107f4417dd86dc53e4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>7be375b8253303107f4417dd86dc53e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <ui_id>d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VW227bMAz9FcPPQSAvadr1bUhQYEAvQNv1pesEWZIToYrtSXIuDfLvoyxf0sTNks0FOuzJEEmJ5OE5lh5XvmD+uY+iPkIkODk7RajXQ2gw6FEShGFvQEMUnnz2O35MphwidaIMNsuUg2lGZFbZiKZgYkKnkiwfCg/xTOK9gJ1OhGSKx/7541PHT4mC0wxX/vlqy3VoOZKEXELoHeT27l09DSXmn3PIkQhari+LrcPSmChmS+l1fL4wPGYcaoiI1LzjT0nMiEnUsrIoTthNLGvDRMQGTvNt8EKLF8jX+2TjIg5dUe581RIXEDlzNCKG3BmVUZOpItQVqwGPVdVmBWQD5kX5aN2p419sPNmOZ3xzQ7AGvBmPSCbN8M9yBsfm/GRzugZvUiMSmLrfs3MhoSzbT2Q2ja/dLP2qwocGsjnP6A3OZRrA5qkdqJ1QMa7obpLMb8tpXIg4r6twyoQSWa2IMUqEmbG4rPyI4UhwybCIpYhtJhibpQ+XfAoZ8JSkqYjHOFXJTOSnQi/T7ljCohvJZG6xEOO4S6jtvAvEIt0LsI9y8wNRwqJwBcfA5o5NOIGtRT6sqRKpwXPBxtzU2csolpg5kc9N/oJxuBxU3p6/7vh6qYeSaF2DDTTFPzOLgYO+QA/ng8q35FV8gQ5mvADKciCXLT3dK9uTLYm6QW/wZff/cfSf44ASShRuLCO9cPlWVcWvw808j3j9+7iwDu/aOUp6t/YLOUPt/EKaJL4rwaMUuCstS7W/UNY7CqhJsccT32HzG/b3915ag6DmGQwZK64BUr3B/gAhtKuAoOPMx8nggFpKGVyRhXdbFdNYYaEEICkf58BuyuBrZS000G9NA/2Pq4FyWI03UDmzli+g95FJ+9fA2f7XG6ppRpOYCVvjpg5gsHRC1JhjSjT/nsEhbLX6lkIbnOGgSzMFyJnu67j1+oc2xGTabRgm01SCQNiuolo//zhpHoBOKc3hJjxNkJWv223bZdMB5ZOtRXmijyvQf+SSeqe7aD/J+mHNJ3dcrb4F1jHFNfcRjvl8Y22Ift7V1DWfe6Myxrt3MW3qIi+51MV9UfNWC4Ua8mXTgy3ftvVgQ//ng+1jXkVQkJDAEOxGqJNM5VDOMJWZzh2KxNqd1eLF9fQLMl9MBwcRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7be375b8253303107f4417dd86dc53e1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>37e375b8253303107f4417dd86dc53e2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <ui_id>49d14232-516b-467b-b11a-9acb35013c4f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VW227bMAz9FcPPQSAvadr1bUhQYEAvQNv1pSsEWZYToYrtSXIuDfLvoyRf0sTNktUFOuzJEEmJ5OE5lh5XPo/8cx/FfYRIcHJ2ilCvh9Bg0KMkCMPegIYoPPnqd/yETBlEqlRqrJcZA9OMiLyyEUXBFHGVCbJ8KDzE06n3AnY64SKSLPHPH586fkYknKaZ9M9XW65DyxEkZAJC7yC3d+/qaSjRfs4hR8ppub4stg5LYyojU0qv47OFZknEoIaYCMU6/pQkEdGpXFYWyUh0k4jaMOGJhtN8E7xQ/AXy9b6YuJhBV5Q5X7XEBUTOHI+IJnda5lTnsgh1xSrAY1W1WQHZgHlRPlp36vgXE0+24yO2uSFYA94Ri0ku9PDvcgbH5vxicroGbzLNU5i63zNzIaEo209FPk2u3Sz9qsKHBrI5z+gNzuUKwGaZGaiZUDGu+G6Szm/LaVzwxNZVOEVKiahWRGvJw1wbXFZ+HOGYMxFhngiemEwwNkMfJtgUMuApyTKejHEm0xm3p0Iv0+5YwKIbi3RusODjpEuo6bwLxCLdC7CPrPmBSG5QuIJjYHPHJJzA1iIfVlTyTOM5j8ZM19nLqCjVcyKem/wF43A5KNuev+74aqmGgihVgw00xb9yg4GDvkAP20HZLbaKb9DBjBVAGQ5Y2dLTvbI92ZKoG/QGX3b/H0f/OQ4ooUThxjDSC5dvVVX8OtzMbcTr38eFcXjXzlHSu7VfyBlq5xfSJPFdCR6lwF1pGaq9Q1kfKKAmxR5PfIfNH9jf33tpDYKaZzBkLJkCSNUG+wOE0K4Cgo4zHyeDA2opZXBFFt5tVUxjhYUSgKRsbIHdlMH3ylpooN+aBvqfVwPlsBpvoHJmLV9AHyOT9q+Bs/2vN1TTjKZJxE2NmzqAwdIJkWOGKVHsZw6HRKvVjwzaYBEOujSXgJzuvo5br3e1846TjpPbAR2XchtuttwEQ/li3bZdNh1QPsNalBz6vKL7Ry6eD7pf9pOsH9Z8csfVilpglVBcsxzhhM031pqo5131XLO5NypjvHsX06YubMmlLu6LmrdaKNRgl02PMLtt6xGG/s9H2Oe8XqAgLoAh2I1Qpbm0UM4wFbmyDkkS5c5q8TJ6+g19sOXI2xAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=37e375b8253303107f4417dd86dc53e2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>33e375b8253303107f4417dd86dc53e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <ui_id>0f428a3c-ef73-448e-9cbc-f0578786fe6e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf2yhp2q7p20SFNImBBIwXQJZj37SWHCeznUIX9b/vJnHawhgCiYchLW/3yz7n+B7ltiZSkAWZgAijJJrxOIrjcRiO55MoncVpNBYxA4jIkGiWA3Ya4IURGG+YqppEXf8oBXMgaBTwyhjQLhDS8jUzK6CcWdjtsB1TpWLbGz+FGb6WSmA7WdzeD0nJDF7gwJBF/az0VoSKpaCw9bKH+Byy25ZNLApe5QiTyj555ieXvjL4tsQKDjVwonBI4NGBFoBAMqYsDEnONJIuzJYsnKkwYYCJC622+4611K4jmrNHK3/hzZOw6csAmXEvwj6kXqAunS2ZY1d4MneV2etVSA6200RAxirlTo5zXcNF6WShuxHHUtVPF6rK9XmnCNkfcPQelUUQUDY8G+QdrexqXTxc9iBPpW4l8RRVwZnaR8w5I9PKNXBqAgpajXNWllKvaGmKjWyHEUoerBQGQaaKB7zTypUOGG9wB6gqC04xv2zTN8zIhsR3PAaHd0Nit/ZEMWsPVFBD+rNqkHTEPAXaqtBKQNtNaIa5kaX7ildtwAPfDb0HwvGrGwaHhWpX3x55oNiAYUrRZgmkBmvvqjCMRV1ngjrDtM0Kky/GUTZNsiQcQTL9MprgA4yScTIfzeJkNoU0nsznk5e88sGnv893b1Cl992pBCXsCzJ53znIkZYD2sn21HrXvji48cW9+z7MftEsbL//Jvx3TZhOX1s3nhy26+jMgxEfqdWcHn4/IX36K/rTXMu+Pjjp6u+zxxvw9va4bvfgZfy9Q57nzo5nB+ddwTtj+mHGmH8mS3gan94Tf3PC/W/8nbomlAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=33e375b8253303107f4417dd86dc53e3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>f7e375b8253303107f4417dd86dc53e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <ui_id>9cbb3695-80e4-4b08-a31f-860060155fec</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VW227bMAz9FcPPRiA3adrlbUtQYEAvQNv1pesEWZYToYrtSXIuDfLvoyxf0sTNks0FOuzJEEmJ5OE5lh5XLg/dgYuiHkLEPz0/Q6jbRajf71LiB0G3TwMUnH5yPTcmUwaRKpEa62XKwDQjIqtsRFEwhVylgiwfCg9xdOK8gJ1OuAgli93B45PnpkTCaZpJd7Dach1ajiABExB6B7mde1tPQ4n5ZwA5Ek7L9WWxdVgaExmaUrqeyxaaxSGDGiIiFPPcKYlDohO5rCySkfAmFrVhwmMNp7kmeKH4C+Trnpi4iEFXlFlftcQFRNYcjYgmd1pmVGeyCLXFKsBjVbVZAdmAeVE+Wnt1/IuJJ9vxIdvc4K8B75BFJBN6+Gc5/WNznpictsGbVPMEpu52zVxIIMr2E5FN42s7S7eq8KGBbNYzeoNzmQKwWWoGaiZUjCu6myTz23IaFzzO6yqcIqFEVCuiteRBpg0uKzcKccSZCDGPBY9NJhiboQ8TbAoZ8JSkKY/HOJXJjOenQi/TzljAohOJZG6w4OO4Q6jpvAPEIp0LsI9y8wOR3KBwBcfAZs8knMDWIh9WVPJU4zkPx0zX2cuoMNFzIp6b/AXjcDmovD137blqqYaCKFWDDTTFPzODgYW+QA/ng8q35FV8hg5mrADKcCCXLT3bK9vTLYnaQW/wZff/cfSf44ASShRuDCOdYPlWVcWvw848j3j9+7gwDufaOkp6t/YLOUft/EKaJL4rwaMUuCstQ7W/UNY7CqhJsccT32LzG/b39l5afb/mGQwZS6YAUrXBfh8htKsA37Pm42RwQC2lDK7IwrmtimmssFACkJSNc2A3ZfC1shYa6LWmgd7H1UA5rMYbqJxZyxfQ+8ik/WvgfP/rDdU0o0kcclPjpg5gsHRC5JhhShT7nsEh4Wr1LYU2WIj9Ds0kIKc7r+PW6x9KE50pu+ELAPkMBNzRU8unHyfLA5ApZTnchKYJrvJlu227bDqgfK61KE30ccX5j1xQ73QP7SdZL6j5ZI+rlbfAKqa4Zj7CMZtvrDVRz7uKumZzZ1TGOPc2pk1d5CWXurgvat5qoVBDvmx6rOXbth5r6P98rH3MawgK4gIYgu0IVZLJHMoZpiJTuUOSWNmzWry0nn4BecmQDwMRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f7e375b8253303107f4417dd86dc53e3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>7d1b3ea7-2771-4f26-95ba-f2d8df5b1bc5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>bfe375b8253303107f4417dd86dc53e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <ui_id>5ab22b2c-214b-4576-a7a9-a7a0718c1af2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPKEqAopa3CYQ0qWultuOlq6wb+wLWnI/ZDoUh/vtuEidQ+jEq9WGVxtv99DmHe5T7LVOSjdgAZRhdREPRj/r9Xhj2zgdRPOzHUU/2ATFiXZZCgtRpUGRGUrwCXZSJ7fZ7LsGh5FEgCmMwdYFUVizBLJALsLjbUTulcg2bmZ+ijFgqLamdje4fuiwHQw84NGy0PSqdilBDjJpabxqIx5DdJi9jmYkiIZhcNclLPznxlc7XCVVoqIQThV2Ga4epRAIyB22xyxJIiXRmNmzkTEEJgyCvU71pO5YqdTXRBNZW/aaXB2HZN0diJrwIbci9QHV6PgEHt7RZuMK0emVKoK01kTiHQrvxYa5uuM6dytJ6xEGsm+lMF0l6VSvC2gUH/0dhCQTmJc8SeU1rfrvMHm8akFOVVpJ4ijoToNsInDMqLlwJZ8tQY6VxAnmu0gXPTbZS1TBBSYKFpiCY6+yR3rRqkQYgStwBqQrBlPKTKj0Do0oS32gNDe+6zG7sWIO1eyqkIf9VlEhqYp4Cr1SoJODVJZTDwqjcfaGnVuiB77reA2HvzQvD/UFVp28PPLAEy6FaymMS5SeaH0UY9mWp4fPb/0v3+3xxAurGF1OFWtoXaHhfOEwIpkNe03pqjTtf7Mx8sXXHh9kjGobV779J/l2TxGdvnZu42F/Xwc69UdbcpoLvPw8hf/qpeG6WSVPvjOv6++xxAt7GHnfVHbyMv3HIce7ycLZzVRe8M84+zBjnn8kSnsan98RrTnj4A65cb1U0CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bfe375b8253303107f4417dd86dc53e3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>2b89fa15-4e52-405c-89b5-f8f8b0c5411d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>77e375b8253303107f4417dd86dc53e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <ui_id>c121e509-37c6-4dca-94ce-e326e81f36da</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V227aQBD9FbTPyLKBoIS3CoRUKU2kJOUljVbj3QFWXV+6uyZQxL93bK8NIZfSKg+NVN7mtnPOYY58v2VKshEboAyji2go+lG/3wvD3vkgiof9OOrJPiBGrMtSSJA6DYrMSIpXoIsysd1+zSU4lDwKRGEMpi6QyoolmAVyARZ3O2qnVK5hM/NTlBFLpSW1s9H9Q5flYGiBQ8NG26PSqQg1xKip9aaBeAzZbfIylpkoEoLJVZO89JMTX+l8nlCFhko4UdhluHaYSiQgc9AWuyyBlEhnZsNGzhSUMAjyOtWbtmOpUlcTTWBt1U/aPAjLvjkSM+FFaEPuBarT8wk4uKWXhStMq1emBNpaE4lzKLQbH+bqhuvcqSytRxzEupnOdJGkV7UirH3g4P8oLIHAvORZIq9pzW+X2eNNA3Kq0koST1FnAnQbgXNGxYUr4WwZaqw0TiDPVbrguclWqhomKEmw0BQEc5090k6rFmkAosQdkKoQTCk/qdIzMKok8YWeoeFdl9mNHWuwdk+FNOQ/ihJJTcxT4JUKlQS8uoRyWBiVu0+0aoUe+K7rPRD23rww3B9Udfr2wANLsByqR3lMonxH860Iw76sFjw//t+1/5kzTsDdOGOqUEv7AhHvDIcJ4XTIa2JPzXHni52ZL7b+eDeDRMOw+v23yb9rk/jsrXMTF/vrOnhzb5U1t6ng+w9EyJ9+LJ67ZdLUO2P4C3ucgLexx111By/jbxxynLs8nO1c1QXvjLN3M8b5R7KEp/HhPfGaEx5+AQS7UcA2CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=77e375b8253303107f4417dd86dc53e4"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=63e375b8253303107f4417dd86dc53a9"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=63e375b8253303107f4417dd86dc53a9^sys_idNOT INf3e375b8253303107f4417dd86dc53df,bbe375b8253303107f4417dd86dc53e0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f23aba68e4b303107f44b348f9c59f3f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>f3e375b8253303107f4417dd86dc53df</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <ui_id>7d1b3ea7-2771-4f26-95ba-f2d8df5b1bc5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPSZDj2CR5KymFwbbCWvqyFXMty4mYInn6SOqZ/Pdd+SMJTWAr3ePerKN7r845PrIbor2rvLOP+sZasVZk+e15RIQKGD43RMGWkyVhWhXCCa3IiOxA+oA1zYLleZwukvGc8tl4ltP5GOKoHM9TSlMaJUnJ2WSlvXKHw3dPacwp9hfCVhLqp3eOYRshC8N7yhUYZOq4Icvm1ZYo8JQFJGUS0YTF0zSeUjqdz6I8jfNoWsTAZykOlJBziaWrM61X5Lu6CpB1Rqh1v/7Utz4MoDZFoDKlI8JfHFcFRxIlSMtHZAuqAKdNTZbOeAQMh+JeyfpYsRHK4TQSal+s+MXDJEpDZclRF+Pd7nGZ9Z52cHkLDpCKZ86bvpRttGDcdo4UvAQv3eoc6wruq1Zl2+Igl0O3ln6rvnRmkOOA4RUi4i2S4FVQGrj3QsqHjd5/HVjeCdW60m9KzUAeV+DQu9y7wKchXPItDsq2UFXoaFYZvRNtM3LZTtYSF5NS6j0eGnI7ARaIT9BYmNwhftvCT2BEUPEZx2AzZsFmlhlRDdraw8lhRGxtVxKsPWlEc7OfPjDsFPfass6e0NIOusGDd7yXcRhd3pisBU7X5vIGvDnMJYUyWrDoepghvhbmD11GLyM98HtLrqM/5LpH/irYSfI/1+/OdaCZgxUsa7/dOC58Wv5hsJ9DgLtDj2YzYZHbY8A+Dn+MsFFjogQ7h/ba/AiqTtjhN07KNnZ7BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">eb9ab6a8e4b303107f44b348f9c59f26</block>
+        <comment/>
+        <connected_to>7d1b3ea7-2771-4f26-95ba-f2d8df5b1bc5</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Discharge Readiness Score">63e375b8253303107f4417dd86dc53a9</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>bbe375b8253303107f4417dd86dc53e0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <ui_id>2b89fa15-4e52-405c-89b5-f8f8b0c5411d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=63e375b8253303107f4417dd86dc53a9^sys_idNOT INb3e375b8253303107f4417dd86dc53e6,fbe375b8253303107f4417dd86dc53e6,bfe375b8253303107f4417dd86dc53e6,73e375b8253303107f4417dd86dc53e7,37e375b8253303107f4417dd86dc53e7,17326b29693f03107f442a5a2042f398,5b326b29693f03107f442a5a2042f398,13326b29693f03107f442a5a2042f399"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>63e375b8253303107f4417dd86dc53a9</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>f8f83385-0fa1-43d0-921a-76e1ee12ff3b</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>b3e375b8253303107f4417dd86dc53e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <transform_compositions>[{"id":"1c07dd02c303201027d44077d840dd07","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{"":""},"value":"100","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="multiply">28c65502c303201027d44077d840dddd</transform_definition_id>
+        <ui_id>465fd36f-68fc-45d8-91af-4a41a3d64fcc</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>63e375b8253303107f4417dd86dc53a9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2.Count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>fbe375b8253303107f4417dd86dc53e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f8f83385-0fa1-43d0-921a-76e1ee12ff3b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>63e375b8253303107f4417dd86dc53a9</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>dad07aa2-1de2-4ec7-aa99-24353d188b34</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>bfe375b8253303107f4417dd86dc53e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <transform_compositions>[{"id":"1c07dd02c303201027d44077d840dd07","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{"":""},"value":"100","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="multiply">28c65502c303201027d44077d840dddd</transform_definition_id>
+        <ui_id>9685749d-4f60-4bdd-87e4-2576b1936b6e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>63e375b8253303107f4417dd86dc53a9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2.Count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>73e375b8253303107f4417dd86dc53e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dad07aa2-1de2-4ec7-aa99-24353d188b34</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>63e375b8253303107f4417dd86dc53a9</attached_to>
+        <extra_info/>
+        <order>2</order>
+        <prescription/>
+        <source_ui_id>dad07aa2-1de2-4ec7-aa99-24353d188b34</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>37e375b8253303107f4417dd86dc53e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <transform_compositions>[{"id":"ec7a7362c303201027d44077d840dd87","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{"":""},"value":"6","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="divide">295abf22c303201027d44077d840dd54</transform_definition_id>
+        <ui_id>a99c05ac-fc45-42bb-bc96-9c7dd5307c9e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>63e375b8253303107f4417dd86dc53a9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{d8dd8f18-a58c-4ed3-9836-c95b4bf7f5e2.Count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 07:27:05</sys_created_on>
+        <sys_id>17326b29693f03107f442a5a2042f398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>21f59f90-e957-4efa-9298-63965eb34884</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>63e375b8253303107f4417dd86dc53a9</attached_to>
+        <extra_info/>
+        <order>2</order>
+        <prescription/>
+        <source_ui_id>21f59f90-e957-4efa-9298-63965eb34884</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 07:27:05</sys_created_on>
+        <sys_id>5b326b29693f03107f442a5a2042f398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <transform_compositions>[{"id":"ec7a7362c303201027d44077d840dd87","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"6","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="divide">295abf22c303201027d44077d840dd54</transform_definition_id>
+        <ui_id>e4ec66fc-7459-4ea9-8355-07042ecce6a5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>63e375b8253303107f4417dd86dc53a9</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>21f59f90-e957-4efa-9298-63965eb34884</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 07:27:05</sys_created_on>
+        <sys_id>13326b29693f03107f442a5a2042f399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:05</sys_updated_on>
+        <transform_compositions>[{"id":"1c07dd02c303201027d44077d840dd07","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"100","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="multiply">28c65502c303201027d44077d840dddd</transform_definition_id>
+        <ui_id>3e89fdc9-35d3-44e8-a913-6e00e9242527</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=63e375b8253303107f4417dd86dc53a9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_63e375b8253303107f4417dd86dc53a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>73e375b8253303107f4417dd86dc53ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_63e375b8253303107f4417dd86dc53a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>bfe375b8253303107f4417dd86dc53d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_63e375b8253303107f4417dd86dc53a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:43</sys_created_on>
+        <sys_id>fbe375b8253303107f4417dd86dc53be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 15:29:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_63e375b8253303107f4417dd86dc53a9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_63e375b8253303107f4417dd86dc53a9"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ba43762ce47303107f44b348f9c59ff4</sys_id>
+        <latest_snapshot>63e375b8253303107f4417dd86dc53a9</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-hotfix1-06-18-2026_06-19-2026_0938.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ba43762ce47303107f44b348f9c59ff4^sys_idNOT INdcf3b5b8253303107f4417dd86dc530e"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"dcf3b5b8253303107f4417dd86dc530e","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>ba43762ce47303107f44b348f9c59ff4</plan_id>
+        <snapshot>15526f29693f03107f442a5a2042f3cb</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 15:29:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dcf3b5b8253303107f4417dd86dc530e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 07:27:06</sys_updated_on>
+        <trigger display_value="">27326b29693f03107f442a5a2042f3ee</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ba43762ce47303107f44b348f9c59ff4"/>
+</record_update>

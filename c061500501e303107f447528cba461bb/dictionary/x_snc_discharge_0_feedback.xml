@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7ca6980ee4bb03107f440fba738b905b" label="Feedback" max_length="40" name="x_snc_discharge_0_feedback" type="collection">
+        <element label="Patient Name" max_length="40" name="patient_name" type="string"/>
+        <element label="Overall Experience" max_length="255" name="overall_experience" type="float"/>
+        <element label="Rate the Facilities" max_length="255" name="rate_the_facilities" type="float"/>
+        <element label="Experience with Doctor" max_length="255" name="experience_with_doctor" type="float"/>
+        <element label="Comments" max_length="40" name="comments" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-25 08:51:52</sys_created_on>
+        <sys_id>ac36fce5f5ab03107f44e7103d16048a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_snc_discharge_0.Admin</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_security_acl display_value="">9626fce5f5ab03107f44e7103d160496</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ac36fce5f5ab03107f44e7103d16048a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-25 08:51:52</sys_updated_on>
+        <sys_user_role display_value="x_snc_discharge_0.Admin" name="x_snc_discharge_0.Admin">e41648e1f52703107f44e7103d160450</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>sys_security_acl_role_ac36fce5f5ab03107f44e7103d16048a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-25 08:51:52</sys_created_on><sys_id>ac36fce5f5ab03107f44e7103d16048a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_snc_discharge_0.Admin</sys_name><sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package><sys_policy/><sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope><sys_security_acl display_value="">9626fce5f5ab03107f44e7103d160496</sys_security_acl><sys_update_name>sys_security_acl_role_ac36fce5f5ab03107f44e7103d16048a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-25 08:51:52</sys_updated_on><sys_user_role display_value="x_snc_discharge_0.Admin" name="x_snc_discharge_0.Admin">e41648e1f52703107f44e7103d160450</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1418797832</payload_hash>
+        <record_name>.x_snc_discharge_0.Admin</record_name>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-25 08:51:52</sys_created_on>
+        <sys_id>d6f87cadf5ab03107f44e7103d16042b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0d7c38e0a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-25 08:51:52</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>d6f87cad99ab0310de9e022a49406e2a</update_guid>
+        <update_guid_history>d6f87cad99ab0310de9e022a49406e2a:1418797832</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".x_snc_discharge_0.Admin">60d034fe812b03107f44b64db18e3c86</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-29 05:28:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>730671490e8949b3bd8b4797a0a80ac9</sys_id>
+        <sys_metadata>ac36fce5f5ab03107f44e7103d16048a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_snc_discharge_0.Admin</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_ac36fce5f5ab03107f44e7103d16048a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_ac36fce5f5ab03107f44e7103d16048a">d6f87cadf5ab03107f44e7103d16042b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-29 05:28:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="DELETE">
+        <active>true</active>
+        <description> Theme for the Patient Discharge Command Center</description>
+        <name>Patient Discharge Command Center Theme</name>
+        <parent/>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 16:08:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f0ccbd3c257303107f4417dd86dc53d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patient Discharge Command Center Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_ux_theme_f0ccbd3c257303107f4417dd86dc53d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 16:08:18</sys_updated_on>
+        <theme/>
+    </sys_ux_theme>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>sys_ux_theme_f0ccbd3c257303107f4417dd86dc53d9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme"><sys_ux_theme action="INSERT_OR_UPDATE"><active>true</active><description> Theme for the Patient Discharge Command Center</description><name>Patient Discharge Command Center Theme</name><parent/><sys_class_name>sys_ux_theme</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-05 16:08:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f0ccbd3c257303107f4417dd86dc53d9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Patient Discharge Command Center Theme</sys_name><sys_overrides/><sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package><sys_policy/><sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope><sys_update_name>sys_ux_theme_f0ccbd3c257303107f4417dd86dc53d9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-05 16:08:18</sys_updated_on><theme/></sys_ux_theme></record_update>]]></payload>
+        <payload_hash>-2131518536</payload_hash>
+        <record_name>Patient Discharge Command Center Theme</record_name>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 16:08:18</sys_created_on>
+        <sys_id>7ccc317c257303107f4417dd86dc5351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a10cd2b5d70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 16:08:18</sys_updated_on>
+        <type>UX Theme</type>
+        <update_guid>f8ccbd3c7b73031006820085cb3c82db</update_guid>
+        <update_guid_history>f8ccbd3c7b73031006820085cb3c82db:-2131518536</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 17:17:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_theme">sys_ux_theme</sys_db_object>
+        <sys_id>32404e08d79a4d7cb0e311bfadb4ff10</sys_id>
+        <sys_metadata>f0ccbd3c257303107f4417dd86dc53d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patient Discharge Command Center Theme</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>sys_ux_theme_f0ccbd3c257303107f4417dd86dc53d9</sys_update_name>
+        <sys_update_version display_value="sys_ux_theme_f0ccbd3c257303107f4417dd86dc53d9">7ccc317c257303107f4417dd86dc5351</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 17:17:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

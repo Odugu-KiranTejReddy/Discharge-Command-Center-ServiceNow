@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>true</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <filter_extension/>
+        <is_data_interface>false</is_data_interface>
+        <is_df_table>false</is_df_table>
+        <is_extendable>false</is_extendable>
+        <label>Transportation</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_snc_discharge_0_transportation</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 07:51:55</sys_created_on>
+        <sys_id>1e77ab25697f03107f442a5a2042f3c0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Transportation</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_db_object_1e77ab25697f03107f442a5a2042f3c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 10:19:32</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_snc_discharge_0.transportation_user" name="x_snc_discharge_0.transportation_user">87e72f65697f03107f442a5a2042f3ed</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>

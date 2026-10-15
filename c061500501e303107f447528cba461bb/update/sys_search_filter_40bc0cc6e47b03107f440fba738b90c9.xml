@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Now Assist Q&amp;A">bfac0cc6e47b03107f440fba738b9076</ais_search_source>
+        <label>Knowledge</label>
+        <name>Now Assist Q&amp;A</name>
+        <order>100</order>
+        <search_context_config display_value="Now Assist in Virtual Agent - 1">9bac0cc6e47b03107f440fba738b9012</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 05:11:02</sys_created_on>
+        <sys_id>40bc0cc6e47b03107f440fba738b90c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Now Assist Q&amp;A</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_search_filter_40bc0cc6e47b03107f440fba738b90c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 05:11:02</sys_updated_on>
+    </sys_search_filter>
+</record_update>

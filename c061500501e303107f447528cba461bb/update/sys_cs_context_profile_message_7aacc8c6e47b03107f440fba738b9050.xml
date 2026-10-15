@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_message">
+    <sys_cs_context_profile_message action="INSERT_OR_UPDATE">
+        <context_profile display_value="Now Assist in Virtual Agent - 1">66acc8c6e47b03107f440fba738b9003</context_profile>
+        <message>I can't find anything on that directly but I can help you explore other options.</message>
+        <sys_class_name>sys_cs_context_profile_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 05:10:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7aacc8c6e47b03107f440fba738b9050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>I can't find anything on that directly but I can help you explore other options.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_cs_context_profile_message_7aacc8c6e47b03107f440fba738b9050</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 05:10:57</sys_updated_on>
+        <type>fallback</type>
+    </sys_cs_context_profile_message>
+    <sys_translated_text action="delete_multiple" query="documentkey=7aacc8c6e47b03107f440fba738b9050"/>
+</record_update>

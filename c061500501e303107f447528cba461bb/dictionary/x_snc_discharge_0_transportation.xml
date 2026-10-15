@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1e77ab25697f03107f442a5a2042f3c0" label="Transportation" max_length="40" name="x_snc_discharge_0_transportation" type="collection">
+        <element label="Required Time" max_length="255" name="required_time" type="glide_time"/>
+        <element label="Patient" max_length="32" name="patient" reference="x_snc_discharge_0_patient_details" type="reference"/>
+        <element label="Required Date &amp; Time" max_length="255" name="required_date_time" type="calendar_date_time"/>
+        <element label="Require Date and Time" max_length="255" name="require_date_and_time" type="glide_date_time"/>
+        <element label="Discharge Case" max_length="32" name="discharge_case" reference="x_snc_discharge_0_discharge_case" type="reference"/>
+        <element choice="1" label="Transport Type" max_length="255" name="transport_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Ambulance" sequence="0" value="Ambulance"/>
+                <element inactive_on_update="false" label="Cab" sequence="1" value="Cab"/>
+                <element inactive_on_update="false" label="Auto" sequence="2" value="Auto"/>
+            </choice>
+        </element>
+        <element label="Drop Location" max_length="40" name="pick_up_location" type="string"/>
+        <element choice="1" label="Status" max_length="255" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="3" value="InProgress"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="Requested"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="Canceled"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="1" value="Confirmed"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="Completed"/>
+            </choice>
+        </element>
+        <element label="Required Date" max_length="255" name="required_date" type="glide_date"/>
+        <index name="index">
+            <element name="discharge_case"/>
+        </index>
+        <index name="index2">
+            <element name="patient"/>
+        </index>
+    </element>
+</database>

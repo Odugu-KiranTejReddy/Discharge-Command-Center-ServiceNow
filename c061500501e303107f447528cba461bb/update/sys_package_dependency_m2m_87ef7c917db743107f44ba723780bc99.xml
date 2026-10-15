@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">68a46ebf292103107f44f3a98c1824cb</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 00:59:26</sys_created_on>
+        <sys_id>87ef7c917db743107f44ba723780bc99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 00:59:26</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

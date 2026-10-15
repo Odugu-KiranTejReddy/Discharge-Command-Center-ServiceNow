@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels>Contact Center</channels>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Allows users to check a patient's details and discharge status using a Patient ID, assess medical readiness for discharge, identify blocked discharge tasks, view blocker reasons, and find the responsible hospital department or team. When all required readiness checks pass, the assistant updates the patient's status to Discharge in Progress.</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.82",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "080e45702ba440cead2acde83b48c01f": {
+          "id": "080e45702ba440cead2acde83b48c01f",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "c8978317c36d4b238e317731a695e338": {
+          "id": "c8978317c36d4b238e317731a695e338",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "10085de8ca0942f1bb979367ffa3739e": {
+          "id": "10085de8ca0942f1bb979367ffa3739e",
+          "stepType": "StandaloneAITextPrompt",
+          "name": "Patient ID",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "84cc015bc1de4943b383d3f69b57b2ed",
+              "displayName": "Patient ID",
+              "name": "patient_id",
+              "description": "Patient ID used to find the patient's record in the Patient Details table.",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "string",
+              "variableId": "58e206cd50d04625a94cc7ae6f4ee33b",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "TextPrompt",
+              "enforcePrompt": true,
+              "helpText": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Welcome to the Patient Readiness Assistant. Please enter your Patient ID."
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "d692b0b9ef244ba59a69c9c85f43e663"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_10085de8ca0942f1bb979367ffa3739e_output"
+          ],
+          "classificationEnabled": false,
+          "classificationOverrides": [],
+          "standalone": true,
+          "variableIds": [
+            "58e206cd50d04625a94cc7ae6f4ee33b"
+          ]
+        },
+        "4a35ef5f84944682b0392adbd88dd6e4": {
+          "id": "4a35ef5f84944682b0392adbd88dd6e4",
+          "stepType": "LookupRecord",
+          "name": "Find Patient",
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.patient_id}}"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "f2309c4f8f664423baab4b3d6529dc39"
+        },
+        "8e4d6d8178404a8cae98cd4a97659e48": {
+          "id": "8e4d6d8178404a8cae98cd4a97659e48",
+          "stepType": "RecordOutput",
+          "name": "Patient Information",
+          "variableId": "f2309c4f8f664423baab4b3d6529dc39",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "x_snc_discharge_0_patient_details",
+          "fields": [
+            "number",
+            "patient_name",
+            "patient_status",
+            "attending_physician",
+            "bed_ward_number",
+            "medically_ready",
+            "medically_ready_date_time"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "2a09dc188f984c5fa0578a4c80ab8fba": {
+          "id": "2a09dc188f984c5fa0578a4c80ab8fba",
+          "stepType": "Decision",
+          "name": "Patient Status"
+        },
+        "61eef443678a448493f79ac438fda299": {
+          "id": "61eef443678a448493f79ac438fda299",
+          "stepType": "ImplicitEnd"
+        },
+        "d96db166dc774943b4dda254cd59aae6": {
+          "id": "d96db166dc774943b4dda254cd59aae6",
+          "stepType": "ImplicitEnd"
+        },
+        "1a3088d9de8744a5ba0b72df926fac17": {
+          "id": "1a3088d9de8744a5ba0b72df926fac17",
+          "stepType": "StandaloneAIBooleanPrompt",
+          "name": "Medical Assessment Completed",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "099b6953a2dd474dbba6eda781a96f2d",
+              "displayName": "Medical Assessment Completed",
+              "name": "medical_assessment_completed",
+              "description": "Determine whether the patient's medical assessment has been completed.",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "boolean",
+              "variableId": "93dad35a7358451593534d2ae9d82419",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "BooleanPrompt",
+              "enforcePrompt": true,
+              "helpText": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Has the patient's medical assessment been completed?"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "7640e0e838574d1cba72c6455741d1ea"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_1a3088d9de8744a5ba0b72df926fac17_output"
+          ],
+          "classificationEnabled": false,
+          "classificationOverrides": [],
+          "standalone": true,
+          "variableIds": [
+            "93dad35a7358451593534d2ae9d82419"
+          ]
+        },
+        "518a35f11b824285a6ee1d58d5f1d43b": {
+          "id": "518a35f11b824285a6ee1d58d5f1d43b",
+          "stepType": "ImplicitEnd"
+        },
+        "94ddf394126f477fa738fc95e97a6ab1": {
+          "id": "94ddf394126f477fa738fc95e97a6ab1",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "1200e17bf8c4457a9f63a7228078450e": {
+          "id": "1200e17bf8c4457a9f63a7228078450e",
+          "stepType": "TextOutput",
+          "name": "Final Message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "The patient has already been discharged. The discharge process is complete."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "5092531f29c94c298cfafd2c13884c12"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "ab071728ef424df4a0791ca431faa3bc": {
+          "id": "ab071728ef424df4a0791ca431faa3bc",
+          "stepType": "Decision",
+          "name": "Active Blocker Check"
+        },
+        "cea9f5340c9d463a82ca45cb28e747e4": {
+          "id": "cea9f5340c9d463a82ca45cb28e747e4",
+          "stepType": "ImplicitEnd"
+        },
+        "91e17957e6ad4376939e76f5be45a4c3": {
+          "id": "91e17957e6ad4376939e76f5be45a4c3",
+          "stepType": "LookupRecord",
+          "name": "Find Blocked Discharge Task",
+          "condition": {
+            "mode": "glide_query",
+            "value": "status=Blocked"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "8829a4f591e148ac9068eca31d9c792b"
+        },
+        "9b9edcd9f5f94dbf800102b1f05b0544": {
+          "id": "9b9edcd9f5f94dbf800102b1f05b0544",
+          "stepType": "RecordOutput",
+          "name": "Discharge Blocker Information",
+          "variableId": "8829a4f591e148ac9068eca31d9c792b",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "x_snc_discharge_0_new_discharge_task",
+          "fields": [
+            "task_type",
+            "blocker_notes",
+            "assigned_group",
+            "assigned_to",
+            "priority",
+            "status"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "ed2bae8c1eb6466aa767d37d5658852a": {
+          "id": "ed2bae8c1eb6466aa767d37d5658852a",
+          "stepType": "TextOutput",
+          "name": "Discharge Blocker Response",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your discharge is currently blocked. Please contact the responsible department or hospital team to resolve the outstanding discharge task. Once the issue is resolved, your discharge readiness can be reassessed and the discharge process can continue."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "57a01130657c4608bff3ff40ca201aa4": {
+          "id": "57a01130657c4608bff3ff40ca201aa4",
+          "stepType": "TextOutput",
+          "name": "Discharge is in progress Message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your discharge is currently in progress. No active blockers were found, and the discharge process is continuing."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "87e2a40e46eb47c8aac196d362fdc833"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "b1aff50700bc48cabbe1a9ae5aa16721": {
+          "id": "b1aff50700bc48cabbe1a9ae5aa16721",
+          "stepType": "StandaloneAIBooleanPrompt",
+          "name": "Doctor Approval",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "deafa4fd6f3842fa84fe1a39960f0e81",
+              "displayName": "Doctor Approval",
+              "name": "doctor_approval",
+              "description": "Determine whether the doctor has approved the patient for discharge preparation.",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "boolean",
+              "variableId": "af8133a48f1f4eb9b427e71c1df76bb1",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "BooleanPrompt",
+              "enforcePrompt": true,
+              "helpText": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Has the doctor approved the patient for discharge preparation?"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "e104d77a35104e1a973cb34dd16db6aa"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_b1aff50700bc48cabbe1a9ae5aa16721_output"
+          ],
+          "classificationEnabled": false,
+          "classificationOverrides": [],
+          "standalone": true,
+          "variableIds": [
+            "af8133a48f1f4eb9b427e71c1df76bb1"
+          ]
+        },
+        "205a1a51c2794c5289fdbe78f4005ac9": {
+          "id": "205a1a51c2794c5289fdbe78f4005ac9",
+          "stepType": "ImplicitEnd"
+        },
+        "b8486d342dcc45dcac69f5148716a32d": {
+          "id": "b8486d342dcc45dcac69f5148716a32d",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "87dfc8f0d1154a1abc5d74b24c12be3b": {
+          "id": "87dfc8f0d1154a1abc5d74b24c12be3b",
+          "stepType": "TextOutput",
+          "name": "Not Ready",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "The medical assessment has not been completed yet, so the patient is not ready to proceed with discharge preparation."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "f6fb8404a75e41e98356b75d2a39d43e"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "d1024d90739e428d9d31c5c277daa504": {
+          "id": "d1024d90739e428d9d31c5c277daa504",
+          "stepType": "TextOutput",
+          "name": "No assessment",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "The medical assessment has not been completed yet. The patient is not currently ready to proceed with discharge preparation. Please complete the medical assessment and contact the responsible medical team if you need assistance."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "f67daf63a13342f0abf2cb1a05a3f087"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "ed4761d56afe479eacaec80cad976022": {
+          "id": "ed4761d56afe479eacaec80cad976022",
+          "stepType": "TextOutput",
+          "name": "Change into discharge in progress",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "All required discharge readiness checks have been completed successfully. The patient's status will be updated to **Discharge in Progress**. You may now proceed with the discharge process."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "cef87b646a364087bd3def6e0d357363"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "1939b3d9cb444cda86f0dce9ab0542c3": {
+          "id": "1939b3d9cb444cda86f0dce9ab0542c3",
+          "stepType": "LookupRecord",
+          "name": "Find Discharge Case",
+          "condition": {
+            "mode": "glide_query",
+            "value": "patient={{vaInputs.find_patient}}"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "feedc28a0932472db17b82aa9fc0c34a"
+        },
+        "54be55655d824fa988d2d93c337fb2cf": {
+          "id": "54be55655d824fa988d2d93c337fb2cf",
+          "stepType": "StandaloneAIBooleanPrompt",
+          "name": "issues",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "1d0865a655724621a4c566124ecc85c4",
+              "displayName": "issues",
+              "name": "issues",
+              "description": "Are you facing any issues ? ",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "boolean",
+              "variableId": "2c6fd849e536499c8f619ee4df8b5533",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "BooleanPrompt",
+              "enforcePrompt": true,
+              "helpText": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Are you facing any issues ? "
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "eab4b7d9f3954927a6439b5ddeaf4935"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_54be55655d824fa988d2d93c337fb2cf_output"
+          ],
+          "classificationEnabled": false,
+          "classificationOverrides": [],
+          "standalone": true,
+          "variableIds": [
+            "2c6fd849e536499c8f619ee4df8b5533"
+          ]
+        },
+        "430a0b1a0ae44112a0218a53a3052c3c": {
+          "id": "430a0b1a0ae44112a0218a53a3052c3c",
+          "stepType": "ImplicitEnd"
+        },
+        "eda958aeb7904a84bd5839314d555318": {
+          "id": "eda958aeb7904a84bd5839314d555318",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "e7f8e0389f414b06b2977ca439b4e36a": {
+          "id": "e7f8e0389f414b06b2977ca439b4e36a",
+          "stepType": "TextOutput",
+          "name": "Transport message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "You can book transport now."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "2a9a9b5bbdbd430c8e8f1923b21c9a0f"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "d38a8aa626c7484db0626d87860a9d1a": {
+          "id": "d38a8aa626c7484db0626d87860a9d1a",
+          "stepType": "TextOutput",
+          "name": "support message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Please contact support.team@gmail.com"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "4b459f6c2e4f4aa8abc0058358c79fec"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "3f51d309205f409f956a685fc85e6c54",
+          "edgeType": "Edge",
+          "source": "91e17957e6ad4376939e76f5be45a4c3",
+          "target": "9b9edcd9f5f94dbf800102b1f05b0544",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "504d8ebfa0e04057bb421d3ded939f71",
+          "edgeType": "Edge",
+          "source": "8e4d6d8178404a8cae98cd4a97659e48",
+          "target": "2a09dc188f984c5fa0578a4c80ab8fba",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "dac62ae28e6348fc9950513306f1464b",
+          "edgeType": "Edge",
+          "source": "080e45702ba440cead2acde83b48c01f",
+          "target": "10085de8ca0942f1bb979367ffa3739e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e915d9e4e5a940f283f807fb22c58137",
+          "edgeType": "Edge",
+          "source": "10085de8ca0942f1bb979367ffa3739e",
+          "target": "4a35ef5f84944682b0392adbd88dd6e4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "4098a4e8a3834840b674da298e1b8f8b",
+          "edgeType": "Edge",
+          "source": "4a35ef5f84944682b0392adbd88dd6e4",
+          "target": "8e4d6d8178404a8cae98cd4a97659e48",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "01c7c407dd064d63bd25f7cd585b0679",
+          "edgeType": "Branch",
+          "source": "2a09dc188f984c5fa0578a4c80ab8fba",
+          "target": "1a3088d9de8744a5ba0b72df926fac17",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    return vaInputs.find_patient.patient_status.getDisplayValue() == 'Admitted';\n})()"
+          },
+          "label": "Admitted"
+        },
+        {
+          "id": "b4f5b56fd3964bccb62d0c510f15dc75",
+          "edgeType": "Edge",
+          "source": "1a3088d9de8744a5ba0b72df926fac17",
+          "target": "94ddf394126f477fa738fc95e97a6ab1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f3180c7c03d34c7bb679a75fa2725a5f",
+          "edgeType": "Branch",
+          "source": "2a09dc188f984c5fa0578a4c80ab8fba",
+          "target": "1200e17bf8c4457a9f63a7228078450e",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    var status = (vaVars.patient_status || '').toString().trim();\n    return status == 'Discharged';\n})()"
+          },
+          "label": "Discharged"
+        },
+        {
+          "id": "778aa081903d4defba273d69ca415aca",
+          "edgeType": "Branch",
+          "source": "ab071728ef424df4a0791ca431faa3bc",
+          "target": "91e17957e6ad4376939e76f5be45a4c3",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    var dischargeCase = vaInputs.find_discharge_case;\n\n    if (!dischargeCase) {\n        return false;\n    }\n\n    return dischargeCase.has_active_blocker == true;\n})()"
+          },
+          "label": "Has Active Blocker"
+        },
+        {
+          "id": "7261e3daf99b4421ad9fa20718c40489",
+          "edgeType": "Edge",
+          "source": "9b9edcd9f5f94dbf800102b1f05b0544",
+          "target": "ed2bae8c1eb6466aa767d37d5658852a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c7f09c809be34d9cabff57b3fa10f218",
+          "edgeType": "Edge",
+          "source": "ed2bae8c1eb6466aa767d37d5658852a",
+          "target": "d96db166dc774943b4dda254cd59aae6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "768c538cb79c4e998fb6cb2250b7d3d3",
+          "edgeType": "Branch",
+          "source": "ab071728ef424df4a0791ca431faa3bc",
+          "target": "57a01130657c4608bff3ff40ca201aa4",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    var dischargeCase = vaInputs.find_discharge_case;\n\n    if (!dischargeCase) {\n        return false;\n    }\n\n    return dischargeCase.has_active_blocker == false;\n})()"
+          },
+          "label": "No Active Blocker"
+        },
+        {
+          "id": "6c7cfc713bfd432386fce2c0117d47d5",
+          "edgeType": "Edge",
+          "source": "57a01130657c4608bff3ff40ca201aa4",
+          "target": "cea9f5340c9d463a82ca45cb28e747e4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7e88eea314ed4333a9bd6e68be5e4a55",
+          "edgeType": "Branch",
+          "source": "94ddf394126f477fa738fc95e97a6ab1",
+          "target": "b1aff50700bc48cabbe1a9ae5aa16721",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.medical_assessment_completed=true",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "b2dced2f6382489182561395c3344b7d",
+          "edgeType": "Edge",
+          "source": "b1aff50700bc48cabbe1a9ae5aa16721",
+          "target": "b8486d342dcc45dcac69f5148716a32d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "72ba9a4be8bc4a46bd253723f1485bec",
+          "edgeType": "Branch",
+          "source": "b8486d342dcc45dcac69f5148716a32d",
+          "target": "87dfc8f0d1154a1abc5d74b24c12be3b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.doctor_approval=false",
+            "mode": "query"
+          },
+          "label": "False"
+        },
+        {
+          "id": "24039c0b7f2a40cca0f6c56a45d5f466",
+          "edgeType": "Edge",
+          "source": "87dfc8f0d1154a1abc5d74b24c12be3b",
+          "target": "205a1a51c2794c5289fdbe78f4005ac9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "07f1a6388e3c451a9bb09675c094e1a8",
+          "edgeType": "Branch",
+          "source": "94ddf394126f477fa738fc95e97a6ab1",
+          "target": "d1024d90739e428d9d31c5c277daa504",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.medical_assessment_completed=false",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "69518df8fc864c1cbf1f2c173bf43886",
+          "edgeType": "Edge",
+          "source": "d1024d90739e428d9d31c5c277daa504",
+          "target": "518a35f11b824285a6ee1d58d5f1d43b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8cfe1d34042b46c18a7dfb47b276acce",
+          "edgeType": "Branch",
+          "source": "b8486d342dcc45dcac69f5148716a32d",
+          "target": "ed4761d56afe479eacaec80cad976022",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.doctor_approval=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "345cd46b4a6c4219970538516b81f403",
+          "edgeType": "Edge",
+          "source": "ed4761d56afe479eacaec80cad976022",
+          "target": "c8978317c36d4b238e317731a695e338",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "6afa2595562f40b6be5a177afb5168a2",
+          "edgeType": "Branch",
+          "source": "2a09dc188f984c5fa0578a4c80ab8fba",
+          "target": "1939b3d9cb444cda86f0dce9ab0542c3",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    return vaInputs.find_patient.patient_status.getDisplayValue() == 'Discharge in Progress';\n})()"
+          },
+          "label": "Discharge in Progress"
+        },
+        {
+          "id": "abaa4153efcf4e808de8bd96e4be2d82",
+          "edgeType": "Edge",
+          "source": "1939b3d9cb444cda86f0dce9ab0542c3",
+          "target": "ab071728ef424df4a0791ca431faa3bc",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e4d2492cf4984e729615f0db65045c37",
+          "edgeType": "Edge",
+          "source": "1200e17bf8c4457a9f63a7228078450e",
+          "target": "54be55655d824fa988d2d93c337fb2cf",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9dd93b031ebe4543a1f70a4c378d7adf",
+          "edgeType": "Edge",
+          "source": "54be55655d824fa988d2d93c337fb2cf",
+          "target": "eda958aeb7904a84bd5839314d555318",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "df63a4ee90734c82b6c60f179d4a3540",
+          "edgeType": "Branch",
+          "source": "eda958aeb7904a84bd5839314d555318",
+          "target": "e7f8e0389f414b06b2977ca439b4e36a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.issues=",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "3bbcae11de8f4fc49bf194cf05d01dfb",
+          "edgeType": "Edge",
+          "source": "e7f8e0389f414b06b2977ca439b4e36a",
+          "target": "430a0b1a0ae44112a0218a53a3052c3c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "0d579e8dba8f4016be41df31f22b742b",
+          "edgeType": "Branch",
+          "source": "eda958aeb7904a84bd5839314d555318",
+          "target": "d38a8aa626c7484db0626d87860a9d1a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.issues=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "72bb82bc36f54b7ba4afb3abf3295ea1",
+          "edgeType": "Edge",
+          "source": "d38a8aa626c7484db0626d87860a9d1a",
+          "target": "61eef443678a448493f79ac438fda299",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "d692b0b9ef244ba59a69c9c85f43e663": {
+      "id": "d692b0b9ef244ba59a69c9c85f43e663",
+      "name": "ai_data_collector_10085de8ca0942f1bb979367ffa3739e_output",
+      "label": "Ai_data_collector_10085de8ca0942f1bb979367ffa3739e_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "58e206cd50d04625a94cc7ae6f4ee33b": {
+      "id": "58e206cd50d04625a94cc7ae6f4ee33b",
+      "varType": "string",
+      "category": "vaInputs",
+      "label": "Patient ID",
+      "name": "patient_id",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "10085de8ca0942f1bb979367ffa3739e",
+      "isHidden": false,
+      "description": "Patient ID used to find the patient's record in the Patient Details table."
+    },
+    "f2309c4f8f664423baab4b3d6529dc39": {
+      "id": "f2309c4f8f664423baab4b3d6529dc39",
+      "name": "find_patient",
+      "label": "Find Patient",
+      "varType": "reference",
+      "table": "x_snc_discharge_0_patient_details",
+      "category": "vaInputs",
+      "nodeId": "8e4d6d8178404a8cae98cd4a97659e48",
+      "isHidden": false
+    },
+    "7640e0e838574d1cba72c6455741d1ea": {
+      "id": "7640e0e838574d1cba72c6455741d1ea",
+      "name": "ai_data_collector_1a3088d9de8744a5ba0b72df926fac17_output",
+      "label": "Ai_data_collector_1a3088d9de8744a5ba0b72df926fac17_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "93dad35a7358451593534d2ae9d82419": {
+      "id": "93dad35a7358451593534d2ae9d82419",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "label": "Medical Assessment Completed",
+      "name": "medical_assessment_completed",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "1a3088d9de8744a5ba0b72df926fac17",
+      "isHidden": false,
+      "description": "Determine whether the patient's medical assessment has been completed."
+    },
+    "8829a4f591e148ac9068eca31d9c792b": {
+      "id": "8829a4f591e148ac9068eca31d9c792b",
+      "name": "find_blocked_discharge_task",
+      "label": "Find Blocked Discharge Task",
+      "varType": "reference",
+      "table": "x_snc_discharge_0_new_discharge_task",
+      "category": "vaInputs",
+      "nodeId": "9b9edcd9f5f94dbf800102b1f05b0544",
+      "isHidden": false
+    },
+    "e104d77a35104e1a973cb34dd16db6aa": {
+      "id": "e104d77a35104e1a973cb34dd16db6aa",
+      "name": "ai_data_collector_b1aff50700bc48cabbe1a9ae5aa16721_output",
+      "label": "Ai_data_collector_b1aff50700bc48cabbe1a9ae5aa16721_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "af8133a48f1f4eb9b427e71c1df76bb1": {
+      "id": "af8133a48f1f4eb9b427e71c1df76bb1",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "label": "Doctor Approval",
+      "name": "doctor_approval",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "b1aff50700bc48cabbe1a9ae5aa16721",
+      "isHidden": false,
+      "description": "Determine whether the doctor has approved the patient for discharge preparation."
+    },
+    "feedc28a0932472db17b82aa9fc0c34a": {
+      "id": "feedc28a0932472db17b82aa9fc0c34a",
+      "name": "find_discharge_case",
+      "label": "Find Discharge Case",
+      "varType": "reference",
+      "table": "x_snc_discharge_0_discharge_case",
+      "category": "vaInputs",
+      "nodeId": "1939b3d9cb444cda86f0dce9ab0542c3",
+      "isHidden": false
+    },
+    "4ddc909988bc4bfc9575b27d06688190": {
+      "id": "4ddc909988bc4bfc9575b27d06688190",
+      "value": {
+        "mode": "simple",
+        "value": "the responsible team"
+      },
+      "name": "responsible_team",
+      "label": "responsible_team",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "eab4b7d9f3954927a6439b5ddeaf4935": {
+      "id": "eab4b7d9f3954927a6439b5ddeaf4935",
+      "name": "ai_data_collector_54be55655d824fa988d2d93c337fb2cf_output",
+      "label": "Ai_data_collector_54be55655d824fa988d2d93c337fb2cf_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "2c6fd849e536499c8f619ee4df8b5533": {
+      "id": "2c6fd849e536499c8f619ee4df8b5533",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "label": "Issues",
+      "name": "issues",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "54be55655d824fa988d2d93c337fb2cf",
+      "isHidden": false,
+      "description": "Are you facing any issues ? "
+    }
+  }
+}</graph>
+        <key_phrases/>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>llm</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>patient_readiness_assistant</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 12:25:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>cda62cf569f743107f442a5a2042f3f1</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>patient_readiness_assistant</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_cb_topic_cda62cf569f743107f442a5a2042f3f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-13 07:16:51</sys_updated_on>
+        <title>Patient Readiness Assistant</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=cda62cf569f743107f442a5a2042f3f1"/>
+</record_update>

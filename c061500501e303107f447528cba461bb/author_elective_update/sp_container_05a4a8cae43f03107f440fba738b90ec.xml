@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <aria_label/>
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Details Page - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="details_page">c9a460cae43f03107f440fba738b90c6</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 06:55:41</sys_created_on>
+        <sys_id>05a4a8cae43f03107f440fba738b90ec</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Details Page - Container 1</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sp_container_05a4a8cae43f03107f440fba738b90ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 07:50:42</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Discharge Command Center">c061500501e303107f447528cba461bb</application>
+        <file_path/>
+        <instance_id>3939e77a9397c714b060fcb86cba1080</instance_id>
+        <instance_name>act-hck-4161-0022</instance_name>
+        <name>sp_container_05a4a8cae43f03107f440fba738b90ec</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><aria_label/><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Details Page - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="details_page">c9a460cae43f03107f440fba738b90c6</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-09 06:55:41</sys_created_on><sys_id>05a4a8cae43f03107f440fba738b90ec</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Details Page - Container 1</sys_name><sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package><sys_policy/><sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope><sys_update_name>sp_container_05a4a8cae43f03107f440fba738b90ec</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-09 07:50:42</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-1747832282</payload_hash>
+        <record_name>Details Page - Container 1</record_name>
+        <reverted_from/>
+        <source>0061900501e303107f447528cba46100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 07:50:42</sys_created_on>
+        <sys_id>b2317486e4bf03107f440fba738b907e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a11fa4951d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 07:50:42</sys_updated_on>
+        <type>Container</type>
+        <update_guid>f6317486e8bf0310316095939d25037d</update_guid>
+        <update_guid_history>f6317486e8bf0310316095939d25037d:-1747832282,ffe8e846317f03100c1010fda01a411b:-1447539931,89a4a8ca473f03101c482a82b5f5caed:-1747832282</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Details Page - Container 1">6761f886e4bf03107f440fba738b904c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 07:51:34</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>301f8a6d458d45feb5aa5f49eac247f1</sys_id>
+        <sys_metadata>05a4a8cae43f03107f440fba738b90ec</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Details Page - Container 1</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_scope_delete display_value="">5e01a679b646469ea44b203a2f3fca04</sys_scope_delete>
+        <sys_update_name>sp_container_05a4a8cae43f03107f440fba738b90ec</sys_update_name>
+        <sys_update_version display_value="sp_container_05a4a8cae43f03107f440fba738b90ec">b2317486e4bf03107f440fba738b907e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 07:51:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

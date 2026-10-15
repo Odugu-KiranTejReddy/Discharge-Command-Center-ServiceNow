@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-30 04:34:09</sys_created_on>
+        <sys_id>caed61cf8ca303107f443c2131fcf0f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_discharge_0_departments.x_snc_discharge_0.Department Staff</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_security_acl display_value="x_snc_discharge_0_departments">92dff75df5a303107f44e7103d1604a9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_caed61cf8ca303107f443c2131fcf0f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-30 04:34:09</sys_updated_on>
+        <sys_user_role display_value="x_snc_discharge_0.Department Staff" name="x_snc_discharge_0.Department Staff">3f65c025f52703107f44e7103d16046d</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope) {
+  var c = this;
+  c.open = false;
+  c.submitted = false;
+  c.saving = false;
+  c.error = '';
+  c.number = '';
+  c.form = {};
+
+  c.openForm = function() {
+    c.open = true;
+  };
+
+  c.submit = function() {
+    if (!c.form.patient_name) {
+      c.error = 'Please enter the patient name.';
+      return;
+    }
+    if (!c.form.patient_status) {
+      c.error = 'Please select the patient status.';
+      return;
+    }
+    c.error = '';
+    c.saving = true;
+
+    c.server.get({
+      action: 'submit',
+      patient_name: c.form.patient_name,
+      patient_status: c.form.patient_status
+    }).then(function(response) {
+      c.saving = false;
+      if (response.data.success) {
+        c.number = response.data.number;
+        c.submitted = true;
+        c.form = {};
+      } else {
+        c.error = 'Could not save. Please try again.';
+      }
+    });
+  };
+
+  c.close = function() {
+    c.open = false;
+    c.submitted = false;
+    c.error = '';
+    c.number = '';
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.pdc-card {&#13;
+  background: #fff;&#13;
+  border: 1px solid #5fa8a0;&#13;
+  border-radius: 6px;&#13;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);&#13;
+  text-align: center;&#13;
+  padding: 40px 25px;&#13;
+  min-height: 200px;&#13;
+  cursor: pointer;&#13;
+  transition: box-shadow .2s, transform .2s;&#13;
+}&#13;
+.pdc-card:hover {&#13;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);&#13;
+  transform: translateY(-3px);&#13;
+}&#13;
+.pdc-icon { font-size: 56px; color: #14323f; margin-bottom: 15px; }&#13;
+.pdc-title { font-size: 20px; color: #14323f; margin: 0 0 8px; }&#13;
+.pdc-desc { color: #333; margin: 0; }&#13;
+&#13;
+.pdc-overlay {&#13;
+  position: fixed;&#13;
+  top: 0; left: 0; right: 0; bottom: 0;&#13;
+  background: rgba(0,0,0,0.55);&#13;
+  z-index: 2000;&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+}&#13;
+.pdc-modal {&#13;
+  background: #fff;&#13;
+  padding: 25px;&#13;
+  width: 440px;&#13;
+  max-width: 92%;&#13;
+  max-height: 90vh;&#13;
+  overflow-y: auto;&#13;
+  border-radius: 8px;&#13;
+}&#13;
+.pdc-modal h4 { margin-top: 0; color: #14323f; }&#13;
+.pdc-modal label { font-weight: 600; margin-top: 10px; display: block; }&#13;
+.pdc-check label { font-weight: 600; }&#13;
+.pdc-actions { text-align: right; margin-top: 15px; }&#13;
+.pdc-success { font-size: 50px; color: #2e9e5b; margin-bottom: 10px; }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Create a patient record</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>patient_submit_record</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Patient Submit Record</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  var TABLE = 'x_snc_discharge_0_patient_details';
+
+  // Patient Status choices ni table nunchi load chestundi
+  data.statusChoices = [];
+  var ch = new GlideRecord('sys_choice');
+  ch.addQuery('name', TABLE);
+  ch.addQuery('element', 'patient_status');
+  ch.addQuery('inactive', false);
+  ch.orderBy('sequence');
+  ch.query();
+  while (ch.next()) {
+    data.statusChoices.push({
+      value: ch.getValue('value'),
+      label: ch.getValue('label')
+    });
+  }
+
+  // Submit
+  if (input && input.action == 'submit') {
+    var gr = new GlideRecord(TABLE);
+    gr.initialize();
+    gr.setValue('patient_name', input.patient_name);
+    gr.setValue('patient_status', input.patient_status);
+    var sysId = gr.insert();
+
+    if (sysId) {
+      data.success = true;
+      var saved = new GlideRecord(TABLE);
+      if (saved.get(sysId))
+        data.number = saved.getValue('number');
+    } else {
+      data.success = false;
+    }
+  }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 10:36:52</sys_created_on>
+        <sys_id>c75119cee4b343107f440fba738b908f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Patient Submit Record</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sp_widget_c75119cee4b343107f440fba738b908f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 10:45:07</sys_updated_on>
+        <template><![CDATA[<div class="pdc-wrapper">
+
+  <!-- Card -->
+  <div class="pdc-card" ng-click="c.openForm()" role="button" tabindex="0">
+    <i class="fa fa-user-plus pdc-icon"></i>
+    <h4 class="pdc-title">Add Patient Details</h4>
+    <p class="pdc-desc">Register a new patient and set discharge status</p>
+  </div>
+
+  <!-- Modal -->
+  <div class="pdc-overlay" ng-if="c.open">
+    <div class="pdc-modal">
+      <h4>Patient Details</h4>
+
+      <div ng-if="!c.submitted">
+        <label>Patient Name <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" ng-model="c.form.patient_name" placeholder="Enter patient name"/>
+
+        <label>Patient Status <span class="text-danger">*</span></label>
+        <select class="form-control" ng-model="c.form.patient_status"
+                ng-options="s.value as s.label for s in c.data.statusChoices">
+          <option value="">-- Select status --</option>
+        </select>
+
+        <p class="text-danger" ng-if="c.error">{{c.error}}</p>
+
+        <div class="pdc-actions">
+          <button class="btn btn-default" ng-click="c.close()">Cancel</button>
+          <button class="btn btn-primary" ng-click="c.submit()" ng-disabled="c.saving">Submit</button>
+        </div>
+      </div>
+
+      <div ng-if="c.submitted" class="text-center">
+        <i class="fa fa-check-circle pdc-success"></i>
+        <p>Patient record created successfully.</p>
+        <p ng-if="c.number"><strong>{{c.number}}</strong></p>
+        <button class="btn btn-primary" ng-click="c.close()">Close</button>
+      </div>
+    </div>
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

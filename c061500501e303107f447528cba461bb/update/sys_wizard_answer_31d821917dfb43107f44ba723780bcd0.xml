@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New Discharge Task</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>New Discharge Task</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">6ca46ebf292103107f44f3a98c1824ce</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-07 03:58:13</sys_created_on>
+        <sys_id>31d821917dfb43107f44ba723780bcd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Discharge Task</sys_name>
+        <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+        <sys_update_name>sys_wizard_answer_31d821917dfb43107f44ba723780bcd0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-07 03:58:13</sys_updated_on>
+        <table/>
+        <target_url>x_snc_discharge_0_new_discharge_task.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

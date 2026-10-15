@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="3b582e4d716303107f447c1aba1fc1f8" label="Escalation Log" max_length="40" name="x_snc_discharge_0_escalation_log" type="collection">
+        <element choice="1" label="Status" max_length="255" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Resolved" sequence="1" value="Resolved"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
+            </choice>
+        </element>
+        <element label="Escalated To" max_length="1024" name="escalated_to" reference="sys_user" type="reference"/>
+        <element label="Expected Resolution Date &amp; Time" max_length="255" name="expected_resolution_date_time" type="glide_date_time"/>
+        <element label="Resolved Date &amp; Time" max_length="255" name="resolved_date_time" type="glide_date_time"/>
+        <element label="Discharge Task Name" max_length="32" name="discharge_task_name" reference="x_snc_discharge_0_new_discharge_task" type="reference"/>
+        <element label="Discharge Task" max_length="1024" name="discharge_task" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Escalation Reason" max_length="255" name="escalation_reason" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="SLA Breach Risk" sequence="0" value="SLA Breach Risk"/>
+                <element inactive_on_update="false" label="Repeated Reassignment" sequence="2" value="Repeated Reassignment"/>
+                <element inactive_on_update="false" label="Manual Escalation" sequence="3" value="Manual Escalation"/>
+                <element inactive_on_update="false" label="SLA Breached" sequence="1" value="SLA Breached"/>
+            </choice>
+        </element>
+        <element label="Escalated Date &amp; Time" max_length="255" name="escalated_date_time" type="glide_date_time"/>
+        <index name="index">
+            <element name="discharge_task_name"/>
+        </index>
+    </element>
+</database>

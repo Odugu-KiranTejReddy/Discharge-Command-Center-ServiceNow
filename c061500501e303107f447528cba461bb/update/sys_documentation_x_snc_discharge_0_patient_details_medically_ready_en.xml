@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="medically_ready" label="Medically Ready" language="en" table="x_snc_discharge_0_patient_details">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>medically_ready</element>
+            <help/>
+            <hint/>
+            <label>Medically Ready</label>
+            <language>en</language>
+            <name>x_snc_discharge_0_patient_details</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-23 16:53:47</sys_created_on>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>Medically Ready</sys_name>
+            <sys_package display_value="Discharge Command Center" source="x_snc_discharge_0">c061500501e303107f447528cba461bb</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Discharge Command Center">c061500501e303107f447528cba461bb</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_discharge_0_patient_details_medically_ready_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-23 16:59:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
